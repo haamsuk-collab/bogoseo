@@ -7,7 +7,8 @@ import pytest
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO))
 FIXTURES = REPO / "tests" / "fixtures"
-INBOX = REPO / "inbox_sample"  # gitignored local sample PDFs (names: 표본_개선안_*.pdf)
+# local real sample PDFs (gitignored) win; a fresh clone falls back to the synthetic fixtures
+INBOX = (REPO / "inbox_sample") if (REPO / "inbox_sample").is_dir() else FIXTURES / "inbox"
 
 
 @pytest.fixture

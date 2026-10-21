@@ -1,8 +1,18 @@
 #!/usr/bin/env bash
-# Idempotent setup: dependencies, kordoc OCR models check, systemd user units.
+# Idempotent setup: deps, vendored insane-search, kordoc OCR check, keys, skill link, systemd units (--no-update, --no-timer).
 set -euo pipefail
 HERE="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)"
 cd "$HERE"
+
+NO_UPDATE=0
+NO_TIMER=0
+for a in "$@"; do
+  case "$a" in
+    --no-update) NO_UPDATE=1 ;;
+    --no-timer) NO_TIMER=1 ;;
+    *) echo "usage: ./setup.sh [--no-update] [--no-timer]" >&2; exit 2 ;;
+  esac
+done
 
 [ -x .venv/bin/python ] || python3.12 -m venv .venv
 .venv/bin/python -m pip install -q -r requirements.txt
@@ -30,15 +40,72 @@ else
   ln -s "$HERE" "$SKILL_LINK"
 fi
 
-# insane-search dependency of the collector (skill dir + interpreter + engine.fetch_chain)
-INSANE_DIR="${BOGOSEO_INSANE_DIR:-$HOME/.omp/agent/skills/insane-search}"
-INSANE_PY="${BOGOSEO_INSANE_PYTHON:-/usr/bin/python3.12}"
+
+# insane-search: latest GitHub release, vendored (gitignored) into $HERE/vendor/insane-search
+VENDOR="$HERE/vendor/insane-search"
+update_insane() {
+  local repo=fivetaku/insane-search tag tmp url
+  tag="$(curl -fsSL --max-time 20 -H 'Accept: application/vnd.github+json' \
+    "https://api.github.com/repos/$repo/releases/latest" 2>/dev/null \
+    | .venv/bin/python -c 'import json,sys; print(json.load(sys.stdin)["tag_name"])' 2>/dev/null)" || tag=""
+  if [ -n "$tag" ]; then
+    url="https://codeload.github.com/$repo/tar.gz/refs/tags/$tag"
+  elif [ -d "$VENDOR" ]; then
+    echo "WARNING: GitHub release lookup failed; keeping installed insane-search $(cat "$VENDOR/.version" 2>/dev/null)" >&2
+    return 0
+  else
+    tag=main
+    url="https://codeload.github.com/$repo/tar.gz/refs/heads/main"
+  fi
+  if [ "$tag" != main ] && [ "$(cat "$VENDOR/.version" 2>/dev/null)" = "$tag" ]; then
+    echo "insane-search $tag already installed"
+    return 0
+  fi
+  mkdir -p "$HERE/vendor"
+  tmp="$(mktemp -d "$HERE/vendor/.tmp.XXXXXX")"
+  # stage, then prove the engine imports with the interpreter the collector will use, before replacing anything
+  if curl -fsSL --max-time 120 "$url" -o "$tmp/src.tar.gz" \
+     && mkdir "$tmp/out" \
+     && tar -xzf "$tmp/src.tar.gz" -C "$tmp/out" --strip-components=3 --wildcards '*/skills/insane-search/' \
+     && [ -f "$tmp/out/SKILL.md" ] \
+     && (cd "$tmp/out" && "${BOGOSEO_INSANE_PYTHON:-$HERE/.venv/bin/python}" -c 'from engine import fetch_chain' >/dev/null 2>&1); then
+    echo "$tag" > "$tmp/out/.version"
+    if [ -d "$VENDOR" ]; then mv "$VENDOR" "$tmp/prev"; fi
+    if mv "$tmp/out" "$VENDOR"; then
+      echo "insane-search $tag installed in $VENDOR"
+    else
+      if [ -d "$tmp/prev" ]; then mv "$tmp/prev" "$VENDOR"; fi
+      echo "WARNING: could not install insane-search $tag; previous copy restored" >&2
+    fi
+  else
+    echo "WARNING: could not download or validate insane-search ($url); keeping existing copy if any" >&2
+  fi
+  rm -rf "$tmp"
+}
+if [ "$NO_UPDATE" = 0 ]; then update_insane; fi
+
+# insane-search dependency of the collector (same resolution as bogoseo/collect/fetch.py)
+if [ -n "${BOGOSEO_INSANE_DIR:-}" ]; then INSANE_DIR="$BOGOSEO_INSANE_DIR"
+elif [ -d "$VENDOR" ]; then INSANE_DIR="$VENDOR"
+else INSANE_DIR="$HOME/.omp/agent/skills/insane-search"; fi
+INSANE_PY="${BOGOSEO_INSANE_PYTHON:-$HERE/.venv/bin/python}"
 INSANE_OK=1
 if [ ! -d "$INSANE_DIR" ]; then
   INSANE_OK=0
 elif [ ! -x "$INSANE_PY" ] || ! (cd "$INSANE_DIR" && "$INSANE_PY" -c 'from engine import fetch_chain' >/dev/null 2>&1); then
   INSANE_OK=0
 fi
+
+if [ "$NO_TIMER" = 1 ]; then
+  [ "$INSANE_OK" = 1 ] || echo "WARNING: insane-search not usable (dir $INSANE_DIR, interpreter $INSANE_PY)." >&2
+  echo "bogoseo setup done (--no-timer: systemd units not written)"
+  exit 0
+fi
+
+if [ "$(loginctl show-user "$USER" -p Linger --value 2>/dev/null)" != yes ]; then
+  echo "WARNING: user lingering is off; the timer will not run while you are logged out. Run: sudo loginctl enable-linger $USER" >&2
+fi
+
 
 UNIT_DIR="$HOME/.config/systemd/user"
 mkdir -p "$UNIT_DIR"

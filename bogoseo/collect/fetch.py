@@ -32,12 +32,21 @@ DEFAULT_TIMEOUT_S = 60
 DEFAULT_DOWNLOAD_TIMEOUT_S = 300
 
 
+_REPO = Path(__file__).resolve().parents[2]
+
+
 def insane_dir() -> Path:
-    return Path(os.environ.get("BOGOSEO_INSANE_DIR", "~/.omp/agent/skills/insane-search")).expanduser()
+    env = os.environ.get("BOGOSEO_INSANE_DIR")
+    if env:
+        return Path(env).expanduser()
+    vendor = _REPO / "vendor" / "insane-search"
+    if vendor.is_dir():
+        return vendor
+    return Path("~/.omp/agent/skills/insane-search").expanduser()
 
 
 def insane_python() -> str:
-    return os.environ.get("BOGOSEO_INSANE_PYTHON", "/usr/bin/python3.12")
+    return os.environ.get("BOGOSEO_INSANE_PYTHON") or str(_REPO / ".venv" / "bin" / "python")
 
 
 def scrub_url(url: str) -> str:

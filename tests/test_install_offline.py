@@ -94,3 +94,19 @@ def test_extract_wrapper_runs_offline_cached(tmp_path, monkeypatch):
     assert res["ok"] and res["scanned"] and "출제방식" in res["markdown"]
     assert res["ocr_lines"] and not res["low_conf"]
     assert (tmp_path / "cache" / "extract").is_dir()
+
+
+def test_insane_dir_prefers_vendor_and_env_wins(tmp_path, monkeypatch):
+    from bogoseo.collect import fetch
+    repo = tmp_path / "repo"
+    (repo / "vendor" / "insane-search").mkdir(parents=True)
+    monkeypatch.setattr(fetch, "_REPO", repo)
+    monkeypatch.delenv("BOGOSEO_INSANE_DIR", raising=False)
+    monkeypatch.delenv("BOGOSEO_INSANE_PYTHON", raising=False)
+    assert fetch.insane_dir() == repo / "vendor" / "insane-search"
+    assert fetch.insane_python() == str(repo / ".venv" / "bin" / "python")
+    (repo / "vendor" / "insane-search").rmdir()
+    assert fetch.insane_dir() == Path("~/.omp/agent/skills/insane-search").expanduser()
+    monkeypatch.setenv("BOGOSEO_INSANE_DIR", str(tmp_path / "x"))
+    monkeypatch.setenv("BOGOSEO_INSANE_PYTHON", "/opt/py")
+    assert fetch.insane_dir() == tmp_path / "x" and fetch.insane_python() == "/opt/py"

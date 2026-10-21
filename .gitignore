@@ -1,6 +1,6 @@
 reports/
 references/
-inbox/
+/inbox/
 .venv/
 node_modules/
 .cache/
@@ -10,3 +10,4 @@ __pycache__/
 .ouroboros-state/
 .ouroboros/
 inbox_sample/
+vendor/
