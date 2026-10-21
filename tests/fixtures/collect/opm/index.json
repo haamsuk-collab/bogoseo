@@ -1,0 +1,32 @@
+[
+ {
+  "match": "^https://www\\.opm\\.go\\.kr/opm/news/press\\-release\\.do$",
+  "file": "00.html",
+  "content_type": "text/html;charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "^https://www\\.opm\\.go\\.kr/opm/news/press\\-release\\.do\\?mode=view\\&articleNo=163908$",
+  "file": "01.html",
+  "content_type": "text/html;charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "^https://www\\.opm\\.go\\.kr/opm/news/press\\-release\\.do\\?mode=view\\&articleNo=163905$",
+  "file": "02.html",
+  "content_type": "text/html;charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "^https://www\\.opm\\.go\\.kr/opm/news/press\\-release\\.do\\?mode=view\\&articleNo=163903$",
+  "file": "03.html",
+  "content_type": "text/html;charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "^https://www\\.opm\\.go\\.kr/opm/news/press\\-release\\.do\\?mode=download\\&articleNo=163908\\&attachNo=157395$",
+  "file": "04.bin",
+  "content_type": "application/pdf",
+  "status": 200
+ }
+]

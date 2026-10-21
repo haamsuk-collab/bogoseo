@@ -1,0 +1,16 @@
+[
+ {
+  "match": "lawSearch\\.do",
+  "file": "00.dat",
+  "content_type": "text/xml",
+  "status": 200,
+  "doc_based": true
+ },
+ {
+  "match": "lawService\\.do",
+  "file": "01.dat",
+  "content_type": "text/xml",
+  "status": 200,
+  "doc_based": true
+ }
+]

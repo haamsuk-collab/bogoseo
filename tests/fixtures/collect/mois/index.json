@@ -1,0 +1,14 @@
+[
+ {
+  "match": "publicDoc/getDocReport\\?.*numOfRows=",
+  "file": "00.dat",
+  "content_type": "application/json",
+  "status": 200
+ },
+ {
+  "match": "publicDoc/getDocPlan\\?.*numOfRows=",
+  "file": "01.dat",
+  "content_type": "application/json",
+  "status": 200
+ }
+]

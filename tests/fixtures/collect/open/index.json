@@ -1,0 +1,26 @@
+[
+ {
+  "match": "https://www\\.open\\.go\\.kr/othicInfo/infoList/orginlInfoList\\.do\\?viewPage=1$",
+  "file": "00_html.html",
+  "content_type": "text/html; charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "https://www\\.open\\.go\\.kr/othicInfo/infoList/infoListDetl\\.do\\?prdnNstRgstNo=B10CB262890021999000\\&prdnDt=20261019141518\\&nstSeCd=E$",
+  "file": "01_html.html",
+  "content_type": "text/html; charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "https://www\\.open\\.go\\.kr/othicInfo/infoList/infoListDetl\\.do\\?prdnNstRgstNo=B10CB262920312305000\\&prdnDt=20261019142241\\&nstSeCd=E$",
+  "file": "02_html.html",
+  "content_type": "text/html; charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "https://www\\.open\\.go\\.kr/othicInfo/infoList/infoListDetl\\.do\\?prdnNstRgstNo=B10CB262920299537000\\&prdnDt=20261019140647\\&nstSeCd=E$",
+  "file": "03_html.html",
+  "content_type": "text/html; charset=UTF-8",
+  "status": 200
+ }
+]

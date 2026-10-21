@@ -1,0 +1,9 @@
+[
+ {
+  "match": "searchservice/basic",
+  "file": "00.dat",
+  "content_type": "text/xml",
+  "status": 200,
+  "doc_based": true
+ }
+]

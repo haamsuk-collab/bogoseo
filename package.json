@@ -1,0 +1,8 @@
+{
+  "name": "bogoseo",
+  "private": true,
+  "description": "omp skill bogoseo: official report drafting with kordoc extraction",
+  "dependencies": {
+    "kordoc": "4.22.16"
+  }
+}

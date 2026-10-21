@@ -1,0 +1,104 @@
+[
+ {
+  "match": "https://likms\\.assembly\\.go\\.kr/bill/main\\.do$",
+  "file": "00_html.html",
+  "content_type": "text/html;charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "https://likms\\.assembly\\.go\\.kr/bill/bi/dwld/selectFileList\\.do\\?billId=PRC_FBB7EE998A424B0CA952D64DA90CE5$",
+  "file": "01_json.json",
+  "content_type": "application/json",
+  "status": 200
+ },
+ {
+  "match": "https://likms\\.assembly\\.go\\.kr/bill/bi/dwld/selectFileList\\.do\\?billId=PRC_8B3ECC84E4AE44DFBB39D1350D0C68$",
+  "file": "02_json.json",
+  "content_type": "application/json",
+  "status": 200
+ },
+ {
+  "match": "https://likms\\.assembly\\.go\\.kr/bill/bi/dwld/selectFileList\\.do\\?billId=PRC_EFE4CB1CE37E485C9B25CC9DE334B7$",
+  "file": "03_json.json",
+  "content_type": "application/json",
+  "status": 200
+ },
+ {
+  "match": "https://likms\\.assembly\\.go\\.kr/bill/bi/dwld/selectFileList\\.do\\?billId=PRC_C1EE6CFA3B14415597C2644EAA5755$",
+  "file": "04_json.json",
+  "content_type": "application/json",
+  "status": 200
+ },
+ {
+  "match": "https://likms\\.assembly\\.go\\.kr/bill/bi/dwld/selectFileList\\.do\\?billId=PRC_3DB8FBC241F8401287C6EA6E7FA679$",
+  "file": "05_json.json",
+  "content_type": "application/json",
+  "status": 200
+ },
+ {
+  "match": "https://likms\\.assembly\\.go\\.kr/bill/bi/dwld/selectFileList\\.do\\?billId=PRC_340F112B47774357B1B47563ADBC57$",
+  "file": "06_json.json",
+  "content_type": "application/json",
+  "status": 200
+ },
+ {
+  "match": "https://likms\\.assembly\\.go\\.kr/bill/bi/dwld/selectFileList\\.do\\?billId=PRC_962777D5A1A94004BA6232B4F20EB4$",
+  "file": "07_json.json",
+  "content_type": "application/json",
+  "status": 200
+ },
+ {
+  "match": "https://likms\\.assembly\\.go\\.kr/bill/bi/dwld/selectFileList\\.do\\?billId=PRC_22BD550C65534942BC8ABF05DE6F48$",
+  "file": "08_json.json",
+  "content_type": "application/json",
+  "status": 200
+ },
+ {
+  "match": "https://likms\\.assembly\\.go\\.kr/bill/bi/dwld/selectFileList\\.do\\?billId=PRC_83A1B8B6126E4166AFCA70EFF5EDF1$",
+  "file": "09_json.json",
+  "content_type": "application/json",
+  "status": 200
+ },
+ {
+  "match": "https://likms\\.assembly\\.go\\.kr/bill/bi/dwld/selectFileList\\.do\\?billId=PRC_I2G6H0O2Q1O2O1M6N5L0H4I1G2G0F1$",
+  "file": "10_json.json",
+  "content_type": "application/json",
+  "status": 200
+ },
+ {
+  "match": "https://likms\\.assembly\\.go\\.kr/bill/bi/dwld/selectFileList\\.do\\?billId=PRC_75B3BA438B71475E9DE4F91A4754DC$",
+  "file": "11_json.json",
+  "content_type": "application/json",
+  "status": 200
+ },
+ {
+  "match": "https://likms\\.assembly\\.go\\.kr/bill/bi/dwld/selectFileList\\.do\\?billId=PRC_45E6A45A5A864CDD9DA8F0A0AF6CEB$",
+  "file": "12_json.json",
+  "content_type": "application/json",
+  "status": 200
+ },
+ {
+  "match": "https://likms\\.assembly\\.go\\.kr/bill/bi/dwld/selectFileList\\.do\\?billId=PRC_ED5D2DED036748B7833F1B1378560A$",
+  "file": "13_json.json",
+  "content_type": "application/json",
+  "status": 200
+ },
+ {
+  "match": "https://likms\\.assembly\\.go\\.kr/filegate/servlet/FileGate\\?bookId=e237bc06\\-f049\\-479c\\-bf5c\\-bc80b0bd8a49\\&type=1$",
+  "file": "14_pdf.pdf",
+  "content_type": "application/octet-stream",
+  "status": 200
+ },
+ {
+  "match": "https://likms\\.assembly\\.go\\.kr/filegate/servlet/FileGate\\?bookId=2821c710\\-8cbc\\-49bf\\-a342\\-d9458384f717\\&type=1$",
+  "file": "15_pdf.pdf",
+  "content_type": "application/octet-stream",
+  "status": 200
+ },
+ {
+  "match": "https://likms\\.assembly\\.go\\.kr/filegate/servlet/FileGate\\?bookId=43f505b6\\-befd\\-4487\\-b314\\-f55a5d836bff\\&type=1$",
+  "file": "16_pdf.pdf",
+  "content_type": "application/octet-stream",
+  "status": 200
+ }
+]

@@ -1,0 +1,14 @@
+# bogoseo API keys. setup.sh copies this file to ~/.config/bogoseo/keys.yaml (mode 600) if absent.
+# Fill in the values; that file is never committed. `bin/bogoseo keys` shows which are filled in.
+
+# data.go.kr 일반 인증키: https://www.data.go.kr/iim/api/selectAPIAcountView.do
+# (정책브리핑, 행정안전부, 재정경제부, 과학기술정보통신부, 국회입법조사처, 국회도서관 — 각 데이터셋 '활용신청' 필요)
+data_go_kr: ""
+# 국회예산정책처: https://www.nabo.go.kr/ko/api/apply.do?key=2509230004
+nabo: ""
+# 법제처 OC: https://open.law.go.kr/LSO/openApi/cuAskList.do
+law_oc: ""
+# 국회도서관 (data.go.kr 게이트웨이, 활용신청): https://www.data.go.kr/data/15098174/openapi.do
+nanet: ""
+# 열린국회정보: https://open.assembly.go.kr/portal/openapi/openApiActKeyIssPage.do
+assembly: ""

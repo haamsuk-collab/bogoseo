@@ -1,0 +1,9 @@
+[
+ {
+  "match": "nabo\\.go\\.kr/api/v1/report\\.do",
+  "file": "00.dat",
+  "content_type": "application/json",
+  "status": 200,
+  "doc_based": true
+ }
+]

@@ -1,0 +1,44 @@
+[
+ {
+  "match": "^https://www\\.bai\\.go\\.kr/api/bak/dar/AWUBAKDAR001E\\?audSphCd=\\&audSphDtlCd=\\&audKndCd=\\&searchType=0\\&searchText=\\&fromRegiDt=\\&toRegiDt=\\&searchYear=\\&size=3\\&index=0\\&page=0$",
+  "file": "00.json",
+  "content_type": "application/hal+json",
+  "status": 200
+ },
+ {
+  "match": "^https://www\\.bai\\.go\\.kr/api/boards/list\\?brdId=BAK_0007\\&searchType=0\\&searchText=\\&fromRegiDt=\\&toRegiDt=\\&searchYear=\\&size=3\\&index=0\\&page=0$",
+  "file": "01.json",
+  "content_type": "application/hal+json",
+  "status": 200
+ },
+ {
+  "match": "^https://www\\.bai\\.go\\.kr/api/boards/list\\?brdId=BAK_0022\\&searchType=0\\&searchText=\\&fromRegiDt=\\&toRegiDt=\\&searchYear=\\&size=3\\&index=0\\&page=0$",
+  "file": "02.json",
+  "content_type": "application/hal+json",
+  "status": 200
+ },
+ {
+  "match": "^https://www\\.bai\\.go\\.kr/api/boards/detail\\?brdId=BAK_0007\\&postNo=341\\&searchType=0\\&searchText=\\&fromRegiDt=\\&toRegiDt=\\&searchYear=\\&size=10\\&index=0\\&page=0$",
+  "file": "03.json",
+  "content_type": "application/hal+json",
+  "status": 200
+ },
+ {
+  "match": "^https://www\\.bai\\.go\\.kr/api/bak/dar/AWUBAKDAR001E/3387$",
+  "file": "04.json",
+  "content_type": "application/hal+json",
+  "status": 200
+ },
+ {
+  "match": "^https://www\\.bai\\.go\\.kr/api/bak/dar/AWUBAKDAR001E/3382$",
+  "file": "05.json",
+  "content_type": "application/hal+json",
+  "status": 200
+ },
+ {
+  "match": "^https://www\\.bai\\.go\\.kr/api/files/download\\?fileId=20261020135118857069\\&fileSn=1$",
+  "file": "06.bin",
+  "content_type": "application/x-hwp",
+  "status": 200
+ }
+]

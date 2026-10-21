@@ -1,0 +1,12 @@
+reports/
+references/
+inbox/
+.venv/
+node_modules/
+.cache/
+state/
+__pycache__/
+.pytest_cache/
+.ouroboros-state/
+.ouroboros/
+inbox_sample/

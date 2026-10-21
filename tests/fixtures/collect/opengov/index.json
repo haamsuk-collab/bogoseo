@@ -1,0 +1,44 @@
+[
+ {
+  "match": "^https://opengov\\.seoul\\.go\\.kr/press/list$",
+  "file": "00.html",
+  "content_type": "text/html; charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "^https://opengov\\.seoul\\.go\\.kr/paper/list$",
+  "file": "01.html",
+  "content_type": "text/html; charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "^https://opengov\\.seoul\\.go\\.kr/research/list$",
+  "file": "02.html",
+  "content_type": "text/html; charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "^https://opengov\\.seoul\\.go\\.kr/press/37193735$",
+  "file": "03.html",
+  "content_type": "text/html; charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "^https://opengov\\.seoul\\.go\\.kr/press/37193697$",
+  "file": "04.html",
+  "content_type": "text/html; charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "^https://opengov\\.seoul\\.go\\.kr/press/37193695$",
+  "file": "05.html",
+  "content_type": "text/html; charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "^https://opengov\\.seoul\\.go\\.kr/og/com/download\\.php\\?nid=37193697&dtype=basic&rid=F0000122409230&fid=$",
+  "file": "06.bin",
+  "content_type": "application/octet-stream",
+  "status": 200
+ }
+]

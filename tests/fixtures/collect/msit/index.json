@@ -1,0 +1,8 @@
+[
+ {
+  "match": "pressReleaseList",
+  "file": "00.dat",
+  "content_type": "application/json",
+  "status": 200
+ }
+]

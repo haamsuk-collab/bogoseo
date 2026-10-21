@@ -1,0 +1,4 @@
+kiwipiepy==0.24.0
+kiwipiepy_model==0.24.0
+PyYAML==6.0.2
+pytest==8.3.3

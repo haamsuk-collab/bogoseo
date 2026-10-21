@@ -1,0 +1,22 @@
+cap_bytes: 5368709120
+min_free_bytes: 2147483648
+request_interval_s: 3
+source_intervals: {}
+timeouts:
+  kordoc_s: 300
+  vision_s: 120
+  insane_search_s: 60
+  download_s: 300
+retries: 2
+permanent_skip_after: 3
+ocr_confidence_cutoff: 0.80
+ocr_force_min_hangul: 50
+unmeasurable_low_conf_ratio: 0.30
+collect_limit_per_source: 20
+max_download_mb: 100
+ocr_marker_fixes:
+  G: "☞"
+  C: "☞"
+  口: "□"
+  o: "ㅇ"
+  O: "ㅇ"

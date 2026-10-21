@@ -1,0 +1,32 @@
+# Package data: key item names, issuing URLs and sources (metadata only, no values).
+# `bogoseo keys` and README.md read/match this file. User template: keys.example.yaml.
+items:
+  data_go_kr:
+    issue_url: https://www.data.go.kr/iim/api/selectAPIAcountView.do
+    note: "공공데이터포털 일반 인증키(serviceKey). 각 데이터셋 '활용신청' 후 마이페이지에서 확인"
+    sources:
+      - 정책브리핑
+      - 행정안전부_정부 공문서 AI 학습데이터
+      - 재정경제부_보도자료
+      - 과학기술정보통신부_보도자료
+      - 국회입법조사처
+  nabo:
+    issue_url: https://www.nabo.go.kr/ko/api/apply.do?key=2509230004
+    note: "국회예산정책처 Open API 키(SNS 인증 후 발급, 파라미터 key)"
+    sources:
+      - 국회예산정책처
+  nanet:
+    issue_url: https://www.data.go.kr/data/15098174/openapi.do
+    note: "국회도서관 OpenAPI(data.go.kr 게이트웨이). data.go.kr 15098174 데이터셋 활용신청 후 받은 인증키(ServiceKey)"
+    sources:
+      - 국회도서관
+  law_oc:
+    issue_url: https://open.law.go.kr/LSO/openApi/cuAskList.do
+    note: "국가법령정보 공동활용 OC(이메일 ID)"
+    sources:
+      - 법제처
+  assembly:
+    issue_url: https://open.assembly.go.kr/portal/openapi/openApiActKeyIssPage.do
+    note: "열린국회정보 Open API 인증키(KEY 파라미터)"
+    sources:
+      - 열린국회정보

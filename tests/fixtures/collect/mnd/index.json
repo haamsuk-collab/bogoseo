@@ -1,0 +1,32 @@
+[
+ {
+  "match": "^https://www\\.mnd\\.go\\.kr/bbs/mnd/13000005/artclList\\.do$",
+  "file": "00.html",
+  "content_type": "text/html;charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "^https://www\\.mnd\\.go\\.kr/bbs/mnd/13000005/DPIM_123212/artclView\\.do$",
+  "file": "01.html",
+  "content_type": "text/html;charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "^https://www\\.mnd\\.go\\.kr/bbs/mnd/13000005/DPIM_123115/artclView\\.do$",
+  "file": "02.html",
+  "content_type": "text/html;charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "^https://www\\.mnd\\.go\\.kr/bbs/mnd/13000005/DPIM_123004/artclView\\.do$",
+  "file": "03.html",
+  "content_type": "text/html;charset=UTF-8",
+  "status": 200
+ },
+ {
+  "match": "^https://www\\.mnd\\.go\\.kr/bbs/mnd/13000005/DPIM_123212_1/download\\.do$",
+  "file": "04.bin",
+  "content_type": "application/x-msdownload;charset=UTF-8",
+  "status": 200
+ }
+]

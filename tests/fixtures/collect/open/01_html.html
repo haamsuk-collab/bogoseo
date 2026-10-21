@@ -1,0 +1,3303 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	
+    
+	
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" type="text/css" href="/css/chatbot_style.css?p=202610202343" />
+
+<link rel="stylesheet" type="text/css" href="/css/jquery-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="/js/jquery-treeview/jquery.treeview.css" />		
+
+<script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery-migrate-3.5.2.min.js"></script>
+<script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="/js/jqgrid/i18n/grid.locale-kr.js"></script>
+<script type="text/javascript" src="/js/jquery-treeview/jquery.treeview.js"> </script>
+<script type="text/javascript" src="/js/jquery-validation/dist/jquery.validate.js"> </script>
+<script type="text/javascript" src="/js/jquery.base64.min.js"> </script>
+
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/jquery.alphanumeric.pack.js"></script>
+<script type="text/javascript" src="/common/js/jquery.bxslider.js"></script>
+
+<script type="text/javascript" src="/common/js/jqcloud-1.0.4.js"></script>
+
+<script type="text/javascript" src="/js/util.js?q=20261001"></script>
+<script type="text/javascript" src="/js/history.js?q=20261001"></script>
+<script type="text/javascript" src="/js/validator.js?q=20261001"></script>
+<script type="text/javascript" src="/js/pagingUtil.js?q=20261001"></script> 
+<script type="text/javascript" src="/js/calendar.js"></script> 
+<script type="text/javascript" src="/js/commonData.js"></script>
+<script type="text/javascript" src="/js/ops-common.js?q=20261001"></script>
+<script type="text/javaScript">
+	  var wsab_licenseData = "S6flodG3gEh6E9vNWgicIZ5o13iZekKM+eh9qFxDuq7I03iy9faw4dOQHTxr9gVn6JRJE/PY9UEJeypEfl/ehu0laFL/Wsp41nzfigLw31gLN120O7yg0Y+yQltvHZUwtlphjjsmrZg49PcqDIf8vFejiVS715qXmmbpBCUd/5tAx1Ek1V0Lsb4cqtHiNGjN8OHzKbk0sN13xH8EEI0/1gV9j8fS7pA8CSWikwWJb7IBrwA+Pqy/Y5pwvJ/dkRi4DZd28rY2CpucOxAnUpnRDxKKQfO/+lQLVkqvzYkMCAi1EbQ4/EUwE+U9HIjC3uZt";	
+</script>
+<script type="text/javascript" src="/ozviewer/ozexeviewer/ozexe.js?q=20200801"></script>
+<script type="text/javascript" src="/ozviewer/ozexeviewer/ve_utility_1.0.js?q=20200801"></script>
+<script type="text/javascript" src="/ozviewer/ozexeviewer/wsab_install_program_ws.js?q=20200801"></script>
+<script type="text/javascript" src="/ozviewer/ozexeviewer/wsab_install_program_ax.js?q=20200801"></script>
+<script type="text/javascript" src="/ozviewer/ozexeviewer/wsab_install_program_db.js?q=20200801"></script> 
+
+
+<script type="text/javaScript">
+	//<![CDATA[
+	
+		
+ 		var result     	= {"openCateSearchVO":{"ablSeCd":"","adplyDtls":"","adplySn":"","bfftOppSeCd":"","centrSysTrsfYmd":"","chckYn":"","checkCount":"1","chgrNmpn":"이지향","chngTyCd":"","chrgDeptCd":"7011403","chrgDeptNm":"행정지원과","closeNstYn":"n","cnt":0,"cntcTrgetSeCd":"","diosLogId":"","dlsrCdNm":"부분공개","dmdrSeCd":"","docAblYmd":"","docBundleNm":"","docNo":"행정지원과-3892","docSumryDtls":"","docbndlSj":"","dtaRedgLmttEndYmd":"20261019","eccstPrdnRceptRgstNo":"","errorDtls":"","evlAvg":"","evlCnt":"","evlSco":"","evlSn":"","fileByteNum":"","fileClsdrResnDtls":"","fileCoursUrl":"","fileCreatYmd":"","fileId":"","fileList":[{"ablSeCd":"","adplyDtls":"","adplySn":"","bfftOppSeCd":"","centrSysTrsfYmd":"","chckYn":"","checkCount":"","chgrNmpn":"","chngTyCd":"","chrgDeptCd":"","chrgDeptNm":"","closeNstYn":"","cnt":0,"cntcTrgetSeCd":"","diosLogId":"","dlsrCdNm":"","dmdrSeCd":"","docAblYmd":"","docBundleNm":"","docNo":"","docSumryDtls":"","docbndlSj":"","dtaRedgLmttEndYmd":"","eccstPrdnRceptRgstNo":"","errorDtls":"","evlAvg":"","evlCnt":"","evlSco":"","evlSn":"","fileByteNum":"48144","fileClsdrResnDtls":"","fileCoursUrl":"","fileCreatYmd":"","fileId":"B10CB262890021999060","fileList":[],"fileNm":"결재문서본문.pdf","fileOnslfHoldYn":"","fileOppYn":"Y","fileOrdr":"0","fileSeDc":"본문","fileYn":"","firstIndex":1,"fnctClCd":"","fnctClLevel2Cd":"","frstCntcNstCd":"","frstRgstPot":"","frstRgstrId":"","ftrCond":"","holdNstCd":"","iframeColor":"","iframeKndCd":"","iframeNstCd":"","iframeWidth":"","inSide":"","infoSj":"","infoSn":"","infoTyCd":"","insttTyLclasCd":"","lastIndex":1,"lastSnctrClsfNum":"","lastSnctrClsfSeCd":"","lastSnctrNmpn":"","lastSnctrOfpsNm":"","lastUpdtPot":"","lastUpdtrId":"","level":"","linkUrl":"","listClsdrResnDtls":"","listOppSeCd":"","listRgstYmd":"","mberId":"","ndnfFiltrComptYn":"","ndnfFiltrRndabtYn":"","newYn":"","nstCd":"","nstCdNm":"","nstClBrmLevel6Cd":"","nstClCd":"","nstClNm":"","nstSeCd":"","openInfoYmd":"","opertnDocNo":"","opertnDocSj":"","oppSeCd":"","oppUrl":"","orglPrdnNstCd":"","pageIndex":1,"pageSize":10,"pageUnit":10,"partopndate":"","pkVal":"","prcsNstNm":"","prcsSn":"","prcsStsCd":"","prcsStsDc":"","prdnDeptCd":"","prdnDt":"20261019141518","prdnDtView":"","prdnNstCd":"","prdnNstRgstNo":"B10CB262890021999000","preIdx":"","prsrvPdCd":"","prsrvPdNum":"","rceptInsttCd":"","rceptInsttCdNm":"","rceptRgstNo":"","rcordMngeSysTrsfYmd":"","rcordWaterseasnId":"","recordCountPerPage":10,"returnUrl":"","rgstSeCd":"","rowPage":10,"searchEndDt":"","searchFromDt":"","searchKeyword":"","searchNstCd":"","searchNstNm":"","searchStDt":"","searchToDt":"","searchType":"","sendEmail":"","sendMobile":"","sessionId":"","stdClSystmLevel3Cd":"","themeCd":"","themeTitle":"","themeType":"","title":"","totalPage":0,"unitJobNm":"","urtxtYn":"","viewPage":1,"wonmunopndate":""},{"ablSeCd":"","adplyDtls":"","adplySn":"","bfftOppSeCd":"","centrSysTrsfYmd":"","chckYn":"","checkCount":"","chgrNmpn":"","chngTyCd":"","chrgDeptCd":"","chrgDeptNm":"","closeNstYn":"","cnt":0,"cntcTrgetSeCd":"","diosLogId":"","dlsrCdNm":"","dmdrSeCd":"","docAblYmd":"","docBundleNm":"","docNo":"","docSumryDtls":"","docbndlSj":"","dtaRedgLmttEndYmd":"","eccstPrdnRceptRgstNo":"","errorDtls":"","evlAvg":"","evlCnt":"","evlSco":"","evlSn":"","fileByteNum":"183808","fileClsdrResnDtls":"","fileCoursUrl":"","fileCreatYmd":"","fileId":"B10CB262890021999100","fileList":[],"fileNm":"2026년 응급처치 및 심폐소생술 교육 운영 계획(안).hwp","fileOnslfHoldYn":"","fileOppYn":"N","fileOrdr":"0","fileSeDc":"첨부","fileYn":"","firstIndex":1,"fnctClCd":"","fnctClLevel2Cd":"","frstCntcNstCd":"","frstRgstPot":"","frstRgstrId":"","ftrCond":"","holdNstCd":"","iframeColor":"","iframeKndCd":"","iframeNstCd":"","iframeWidth":"","inSide":"","infoSj":"","infoSn":"","infoTyCd":"","insttTyLclasCd":"","lastIndex":1,"lastSnctrClsfNum":"","lastSnctrClsfSeCd":"","lastSnctrNmpn":"","lastSnctrOfpsNm":"","lastUpdtPot":"","lastUpdtrId":"","level":"","linkUrl":"","listClsdrResnDtls":"","listOppSeCd":"","listRgstYmd":"","mberId":"","ndnfFiltrComptYn":"","ndnfFiltrRndabtYn":"","newYn":"","nstCd":"","nstCdNm":"","nstClBrmLevel6Cd":"","nstClCd":"","nstClNm":"","nstSeCd":"","openInfoYmd":"","opertnDocNo":"","opertnDocSj":"","oppSeCd":"","oppUrl":"","orglPrdnNstCd":"","pageIndex":1,"pageSize":10,"pageUnit":10,"partopndate":"","pkVal":"","prcsNstNm":"","prcsSn":"","prcsStsCd":"","prcsStsDc":"","prdnDeptCd":"","prdnDt":"20261019141518","prdnDtView":"","prdnNstCd":"","prdnNstRgstNo":"B10CB262890021999000","preIdx":"","prsrvPdCd":"","prsrvPdNum":"","rceptInsttCd":"","rceptInsttCdNm":"","rceptRgstNo":"","rcordMngeSysTrsfYmd":"","rcordWaterseasnId":"","recordCountPerPage":10,"returnUrl":"","rgstSeCd":"","rowPage":10,"searchEndDt":"","searchFromDt":"","searchKeyword":"","searchNstCd":"","searchNstNm":"","searchStDt":"","searchToDt":"","searchType":"","sendEmail":"","sendMobile":"","sessionId":"","stdClSystmLevel3Cd":"","themeCd":"","themeTitle":"","themeType":"","title":"","totalPage":0,"unitJobNm":"","urtxtYn":"","viewPage":1,"wonmunopndate":""}],"fileNm":"","fileOnslfHoldYn":"","fileOppYn":"","fileOrdr":"","fileSeDc":"","fileYn":"Y","firstIndex":1,"fnctClCd":"","fnctClLevel2Cd":"","frstCntcNstCd":"","frstRgstPot":"","frstRgstrId":"","ftrCond":"","holdNstCd":"","iframeColor":"","iframeKndCd":"","iframeNstCd":"","iframeWidth":"","inSide":"","infoSj":"2026년 응급처치 및 심폐소생술 교육 운영 계획(안) 수립","infoSn":"","infoTyCd":"","insttTyLclasCd":"","lastIndex":1,"lastSnctrClsfNum":"","lastSnctrClsfSeCd":"03","lastSnctrNmpn":"","lastSnctrOfpsNm":"","lastUpdtPot":"","lastUpdtrId":"","level":"","linkUrl":"","listClsdrResnDtls":"","listOppSeCd":"","listRgstYmd":"","mberId":"","ndnfFiltrComptYn":"","ndnfFiltrRndabtYn":"","newYn":"","nstCd":"7010000","nstCdNm":"","nstClBrmLevel6Cd":"FB100602202000000538","nstClCd":"","nstClNm":"교육 > 교육일반 > 일반행정지원 > 부서공통업무 > 과공통업무 > 부서교직원교육훈련및연수관리","nstSeCd":"E","openInfoYmd":"","opertnDocNo":"","opertnDocSj":"","oppSeCd":"2","oppUrl":"","orglPrdnNstCd":"","pageIndex":1,"pageSize":10,"pageUnit":10,"partopndate":"20180901","pkVal":"","prcsNstNm":"서울특별시교육청","prcsSn":"","prcsStsCd":"","prcsStsDc":"","prdnDeptCd":"","prdnDt":"20261019141518","prdnDtView":"2026.10.19","prdnNstCd":"","prdnNstRgstNo":"B10CB262890021999000","preIdx":"","prsrvPdCd":"3년","prsrvPdNum":"","rceptInsttCd":"7010000","rceptInsttCdNm":"서울특별시교육청","rceptRgstNo":"","rcordMngeSysTrsfYmd":"","rcordWaterseasnId":"","recordCountPerPage":10,"returnUrl":"","rgstSeCd":"","rowPage":10,"searchEndDt":"","searchFromDt":"","searchKeyword":"","searchNstCd":"","searchNstNm":"","searchStDt":"","searchToDt":"","searchType":"","sendEmail":"","sendMobile":"","sessionId":"","stdClSystmLevel3Cd":"","themeCd":"","themeTitle":"","themeType":"","title":"","totalPage":0,"unitJobNm":"부서교직원교육훈련및연수관리","urtxtYn":"Y","viewPage":1,"wonmunopndate":"20150302"},"downloadRestriction":"Y","sysdate":"2026/10/20 23:43:39","parameterVO":{"PSelt":"","age":"","allcheck":"","baseKeyword":"","callLoc":"","category":"TOTAL","chrgDeptCd":"","date":"","detailSearch":false,"downPage":"","duration":"","eduYn":"","endDate":"","exactlyKeyword":"","exclusiveKwd":"","fields":"","fileExt":"","fileNm":"","firstIndex":1,"hilightKwd":"","ignoreKeyword":"","imageRowNo":0,"insttCd":"","insttCdNm":"","insttSeCd":"","kwd":"","lastIndex":1,"maxCount":0,"mustKeyword":"","nearKeyword":"","nowDate":"","offSet":0,"orKeyword":"","originalQuery":"","othbcSeCd":"","pageIndex":1,"pageNum":1,"pageSize":0,"pageUnit":10,"preKwds":[],"prevUrl":"","previousQueries":[],"previousQuery":"","procInsttNm":"","reSrchFlag":false,"recKwd":"","recordCountPerPage":10,"rgstYmd":"","rowPage":10,"scenario":"","searchAll":"","searchCurrTab":"","searchInsttCd":"","searchInsttCdNm":"","searchInsttCdNmPop":"","searchMainYn":"","searchOptnSeCd":"","searchTxtMethod":"allword","siteNm":"","sort":"d","sortNm":"정확도","sortOption":"desc","spcFlag":false,"srchFd":"","startDate":"","subCategory":"","target":"","term":"","topictype":"","total":0,"totalPage":0,"typeValue":"","userId":"","veiwNum":"10","viewPage":1,"withinKeyword":"","writer":"","year":""},"openDate":"2026년 10월 26일","title":"원문정보","prdnNstRgstNo":"B10CB262890021999000"};
+		
+/* 
+		$(document).ready(function(){
+			
+		    // include page 초기 함수 호출
+			initFunction();
+		    
+				$('input:text').each(function(){
+				$(this).bind("keyup",function(e){
+					if(e.which == 13){
+						//1개이상 이면 처리안함.
+						if($(".enterKeypress").length > 0 && $(".enterKeypress").length < 2 ){
+							$(".enterKeypress").eq(0).click();
+						}				
+					}
+					
+				});
+			}); 
+		}); 		
+	
+	//]]> */
+	
+ /**
+  * 로그아웃
+  */
+ function openLogout(){
+ 	//모바일 청구신청시 해당 함수가 동일하게 있어서 예외 처리 함.
+ 	try{
+ 		if(location.host=="m.open.go.kr"){
+ 			var url   = "/com/login/logout.do";
+ 			var param = new Object();
+ 			util_movePage(url, param);
+ 			alert("로그아웃되었습니다");
+ 		}else{
+ 			var url   = "/com/login/logout.ajax";
+ 			var param = new Object();
+ 			var callBackFn    = "openLogout_callBack";
+ 			util_ajax(url, param,callBackFn);
+ 		}
+ 	}catch(e){
+ 		var url   = "/com/login/logout.ajax";
+ 		var param = new Object();
+ 		var callBackFn    = "openLogout_callBack";
+ 		util_ajax(url, param,callBackFn);
+ 	}
+ };
+
+ /**
+  * 로그아웃 콜백
+  */
+ function openLogout_callBack(result){
+     
+     
+     
+     	var url           = "/com/main/mainView.do";
+  		var param         = new Object();
+  		util_movePage(url, param);
+     
+ };
+  
+	//<![CDATA[
+	var sessionMaxInterval 	= "";
+	var checkMaxInterval 	= "";
+	
+
+	//]]>			
+	
+	
+
+	
+	
+		$(function(){
+			generateUFP();
+		});
+	
+	
+	</script>
+
+
+
+    
+    <!-- Any-ID Adaptor 추가 -->
+    
+
+
+
+
+    <script>
+    
+        var anyidAdaptor = anyidAdaptor || {};
+        
+        /*이용기관 수정 영역 Start*/
+        anyidAdaptor.orgLogin = function(data){
+//             alert("이용기관 자체 로그인!!!");
+            //정부 통합인증SDK_연계가이드 4.4.1.3 이용기관 로그인(토글 off) 참조
+            //제공되는 라이브러리 메소드로 인증데이터 decrypt 이후 자체 로그인 로직 개발
+            const params = new URLSearchParams(location.search);
+            var obj ={
+                ssob : data.ssob
+                , extb : data.extb
+                , tag : params.get("tx")
+            }
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/com/anyid/orgLogin.ajax", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+//                     console.log("response.status    >>>>>   ", response.status);
+                    if (response.status == "success") {
+                        alert("로그인 성공");
+//                         console.log("response    >>>>>   ", response.result);
+                    } else {
+                        alert("로그인 실패");
+//                         console.log("response    >>>>>   ", response);
+                    }
+                }
+            };
+            xhr.send(JSON.stringify(obj));
+            
+        }
+        /*이용기관 수정 영역 End*/
+        
+        
+        /*이용기관 문구수정 영역 Start*/
+        anyidAdaptor.JoinConfirm = function(portalJoinUri, memberData){
+
+//             console.log("################### JoinConfirm start ###################");
+//             console.log(portalJoinUri);
+//             console.log(memberData);
+//             console.log("################### JoinConfirm end ###################");
+            if(!confirm('Any-ID 사용자등록 하시겠습니까?')) {
+                anyidAdaptor.orgLogin();
+                return;
+            }else{
+                anyidAdaptor.receiveAnyIdJoin(portalJoinUri, memberData);
+            }
+        }
+        /*이용기관 문구수정 영역 End*/
+        
+        
+        
+
+        anyidAdaptor.portalJoinUri = "";
+        anyidAdaptor.certData = null;
+        anyidAdaptor.ssoByPass = "0";
+        anyidAdaptor.niRegYn = "";
+        anyidAdaptor.agencyContextPath = "";
+        
+        
+        anyidAdaptor.success = function(data){
+//             console.log("################### success start ###################");
+//             console.log("anyidAdaptor.ssoByPass = ["+anyidAdaptor.ssoByPass+"]");
+//             console.log(data);
+            if(anyidAdaptor.ssoByPass != 0 || !data.useSso) {
+                anyidAdaptor.orgLogin(data);
+            } else {
+                anyidAdaptor.certData = data;
+                anyidAdaptor.userCheck();
+            }  
+//             console.log("################### success end ###################");
+        }
+        
+        anyidAdaptor.userCheck = function(){
+//             console.log("################### userCheck start ###################");
+//             console.log("anyidAdaptor.certData", anyidAdaptor.certData);
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", anyidAdaptor.agencyContextPath + "/oidc/userCheck", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+//                     console.log("anyidAdaptor.certData", xhr.responseText);
+                    var response = JSON.parse(xhr.responseText);
+                    if (response.success) {
+                        anyidAdaptor.ssoLogin();
+                    } else {
+                        setTimeout(function() {
+                            anyidAdaptor.receiveAnyIdJoin(response.uri, response.data);
+                        }, 100);  
+                    }
+                }
+            };
+
+            let jsonObject = new Object();
+            jsonObject.txId = anyidAdaptor.certData.txId;
+            jsonObject.ssob = anyidAdaptor.certData.ssob;
+            jsonObject.userSeCd = anyidAdaptor.certData.userSeCd;
+            
+            let jsonStr = JSON.stringify(jsonObject);
+            let encodedString = btoa(jsonStr);
+            
+            var data = "data=" + encodedString + "&txId=" + anyidAdaptor.certData.txId;
+            xhr.send(data);
+
+//             console.log("################### userCheck end ###################");
+            
+        }
+
+        //anyid가입
+        anyidAdaptor.receiveAnyIdJoin = function(portalJoinUri, memberData){
+
+//             console.log("################### receiveAnyIdJoin start ###################");
+//             console.log(portalJoinUri);
+//             console.log(memberData);
+//             console.log("################### receiveAnyIdJoin end ###################");
+            var url = portalJoinUri+encodeURIComponent(memberData);
+            anyidAdaptor.popup(url,"openAnyIdRegistUserIdv",700,740);
+
+            window.addEventListener("message", function(event) {
+                var result;
+                try {
+                    result = JSON.parse(event.data);
+                } catch (error) {
+                    console.error("Received message is not valid JSON:", error);
+                    return;
+                }
+                
+                if(!result.funcName || (result.funcName !== "trmsAgreComplete" && result.funcName !== "registUserComplete")) {
+                    return;
+                }
+                if(result.status === "success") {
+                    if(result.trmsAgreYn == "Y"){
+                        anyidAdaptor.ssoLogin();
+                    }else{
+                        anyidAdaptor.orgLogin();
+                    }
+                }else{
+                    
+                    anyidAdaptor.orgLogin();
+                }
+
+            }, false);
+        }
+
+        // 팝업 호출
+        anyidAdaptor.popup = function(url, name, width, height){
+            let left = (screen.width) ? (screen.width-width)/2 : 0;
+            let top = (screen.height) ? (screen.height-height)/2 : 0;
+            let popup=window.open(url, name ,"resizable=yes,toolbar=no,scrollbars=yes,location=no,top="+top+"px,left="+left+"px,width="+width+"px,height="+height+"px");
+            if(popup){
+                popup.focus();
+            }
+        }
+
+        anyidAdaptor.ssoLogin = function(){
+            let jsonObject = new Object();
+            jsonObject.txId = anyidAdaptor.certData.txId;
+            jsonObject.ssob = anyidAdaptor.certData.ssob;
+            jsonObject.userSeCd = anyidAdaptor.certData.userSeCd;
+            let jsonStr = JSON.stringify(jsonObject);
+            let encodedString = btoa(jsonStr);
+            var baseUrl = window.location.origin + anyidAdaptor.agencyContextPath + "/oidc/ssoLogin";
+            var urlWithParams = baseUrl + "?data=" + encodedString;
+            window.location.href = urlWithParams;
+            
+        }
+        
+        anyidAdaptor.ssoLoginPageSub = function(baseUrl, endPoint, acrValues){
+            var subUrl = "";
+            
+            if (endPoint && endPoint.trim() !== "") {
+                subUrl = "?endPoint=" + encodeURIComponent(endPoint);
+            }
+            
+            if (!acrValues && acrValues.trim() == "") {
+                acrValues = "3" 
+            }
+            
+            if (acrValues && acrValues.trim() !== "") {
+                if(subUrl == ""){
+                    subUrl = "?";
+                }else{
+                    subUrl = subUrl + "&";
+                }
+                subUrl = subUrl + "acrValues=" + acrValues;
+            }
+            
+            window.location.replace(baseUrl+subUrl);
+        }
+        
+        /**/
+        anyidAdaptor.ssoLogout = function(endPoint) {
+//             console.log("################### ssoLogout start ###################");
+//             console.log(endPoint);
+//             console.log("################### ssoLogout end ###################");
+            endPoint = typeof endPoint !== 'undefined' ? endPoint : "/";
+            var baseUrl = window.location.origin + anyidAdaptor.agencyContextPath + "/oidc/ssoLogout";
+            baseUrl = baseUrl + "?endPoint=" + encodeURIComponent(endPoint);
+            window.location.replace(baseUrl);
+        }
+        /**/
+        anyidAdaptor.reAuthLevel = function(endPoint, acrValues){
+            endPoint = typeof endPoint !== 'undefined' ? endPoint : "/";
+            var baseUrl = window.location.origin + anyidAdaptor.agencyContextPath + "/oidc/reAuthLevel";
+            anyidAdaptor.ssoLoginPageSub(baseUrl, endPoint, acrValues)
+
+        }
+        /**/
+        anyidAdaptor.ssoLoginPage = function(endPoint, acrValues){
+//             console.log("################### ssoLoginPage start ###################");
+//             console.log(endPoint);
+//             console.log(acrValues);
+//             console.log("################### ssoLoginPage end ###################");
+            endPoint = typeof endPoint !== 'undefined' ? endPoint : "/";
+            var baseUrl = window.location.origin + anyidAdaptor.agencyContextPath + "/oidc/auth";
+            anyidAdaptor.ssoLoginPageSub(baseUrl, endPoint, acrValues)
+        }
+        
+        /**/
+        anyidAdaptor.ssoSvcToSvc = function(url, endPoint){
+            var baseUrl = url + "/oidc/svcToSvc?endPoint=" + encodeURIComponent(endPoint);;
+            window.open(baseUrl, "_blank");
+        }
+
+
+    </script>
+
+    
+
+	<!-- <script src="/common/js/jquery-3.4.1.min.js"></script>
+	<script src="/common/js/jquery-ui.min.js"></script> -->
+	<script src="/common/js/common.js?p=202610202343"></script>
+	<link rel="stylesheet" type="text/css" href="/common/css/common.css?v=202610202343">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"	/>
+
+	
+
+	<script type="text/javascript">
+	var requestURI = window.location.pathname;
+	var param = {};
+	var menuJson;
+
+	/*
+	[{menuLevelNo=1, upperMenuCd=0, menuCd=4, menuSortNo=4, menuNm=공개정보, scrinLinkUrl=#}, {menuLevelNo=2, upperMenuCd=4, menuCd=60, menuSortNo=2, menuNm=원문정보, scrinLinkUrl=/othicInfo/infoList/orginlInfoList.do}]
+	---------------------------------------------------------------
+	[{menuLevelNo=1, menuNm=공개정보, menuSortNo=4, upperMenuCd=0, menuCd=4, menuUseYn=Y, menuBarUseYn=Y, scrinLinkUrl=#}, {menuLevelNo=2, menuNm=  정보목록, priorupperMenuCd=0, menuSortNo=1, upperMenuCd=4, menuCd=59, menuUseYn=Y, menuBarUseYn=Y, scrinLinkUrl=/othicInfo/infoList/infoList.do}, {menuLevelNo=2, menuNm=  원문정보, priorupperMenuCd=0, menuSortNo=2, upperMenuCd=4, menuCd=60, menuUseYn=Y, menuBarUseYn=Y, scrinLinkUrl=/othicInfo/infoList/orginlInfoList.do}, {menuLevelNo=2, menuNm=  기관장결재문서, priorupperMenuCd=0, menuSortNo=3, upperMenuCd=4, menuCd=61, menuUseYn=Y, menuBarUseYn=Y, scrinLinkUrl=/othicInfo/infoList/mnstrSanDocList.do}, {menuLevelNo=2, menuNm=  사전정보, priorupperMenuCd=0, menuSortNo=4, upperMenuCd=4, menuCd=62, menuUseYn=Y, menuBarUseYn=Y, scrinLinkUrl=/othicInfo/prevOpenInfo/othinfBefInfList.do}, {menuLevelNo=3, menuNm=    업무추진비, priorupperMenuCd=4, menuSortNo=1, upperMenuCd=62, menuCd=123, menuUseYn=Y, menuBarUseYn=Y, scrinLinkUrl=/mrfnIntrst/jobPrtnCt/jobPrtnCt.do}, {menuLevelNo=2, menuNm=  정책실명제, priorupperMenuCd=0, menuSortNo=5, upperMenuCd=4, menuCd=63, menuUseYn=Y, menuBarUseYn=Y, scrinLinkUrl=/othicInfo/plcyChgrRealNm/polRnInsttList.do}, {menuLevelNo=2, menuNm=  주요인사 일정공개, priorupperMenuCd=0, menuSortNo=6, upperMenuCd=4, menuCd=64, menuUseYn=Y, menuBarUseYn=Y, scrinLinkUrl=/othicInfo/mnstrSanDoc/mnstrSanDocList.do}, {menuLevelNo=2, menuNm=  BEST정보 모아보기, priorupperMenuCd=0, menuSortNo=8, upperMenuCd=4, menuCd=66, menuUseYn=Y, menuBarUseYn=Y, scrinLinkUrl=/othicInfo/infoList/bestInfo.do}]
+	*/
+	
+	
+	
+	
+	
+	
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	
+	$(document).on('click', '.open',function() {
+		$(this).parent().toggleClass('on');
+	});
+	
+	$(document).on('load', function() {
+		returnTitle = $("#title").html();
+
+	});
+
+	$(document).ready(function() {
+		var returnTitle = '원문정보';
+		var navSpan = "<li><a href='/'>홈</a></li>&nbsp;&nbsp;";
+		$('.tit_area > .location').find('LI').remove();
+		$('.tit_area > .location').find('BUTTON').remove();
+		$('.tit_area > H2').html('원문정보 상세');
+	
+		
+		//
+		//0
+		//4
+		//4
+		//공개정보
+		//-------------------------
+		///var toplnk = ('' == '#'? (''==''? '#': '') : '#' );
+		///navSpan += "<li><a href='"+toplnk+"'>공개정보</a></li>&nbsp;&nbsp;";
+		
+		navSpan += "<li><a href='#' style='cursor: text;'>공개정보</a></li>&nbsp;&nbsp;";
+		
+		
+		//
+		//4
+		//60
+		//2
+		//원문정보
+		//-------------------------
+		///var toplnk = ('' == '/othicInfo/infoList/orginlInfoList.do'? (''==''? '#': '') : '/othicInfo/infoList/orginlInfoList.do' );
+		///navSpan += "<li><a href='"+toplnk+"'>원문정보</a></li>&nbsp;&nbsp;";
+		
+		navSpan += "<li><a href='#' style='cursor: text;'>원문정보</a></li>&nbsp;&nbsp;";
+		
+		
+		
+		$('.tit_area > .location').prepend(navSpan);
+		
+		$('.tit_area > .location').append('<li id="menugroup">');
+		
+		var menuNm='';
+// 		if(requestURI.indexOf('/othicInfo/infoList/infoListDetl.do')>-1){
+// 			//returnTitle = $("#title").html();
+// 			if(returnTitle != 'undefined') {
+// 				menuNm=returnTitle.split('상세')[0].concat(' 상세');
+// 			}
+// 		}else{
+			menuNm='원문정보 상세';
+// 		}
+		$('#menugroup').append('<a href="#">'+menuNm+'</a>');
+		//$('#menugroup').append('<button type="button" class="open"><img src="../../images/common/btn_location_open.gif" alt="메뉴열기"/></button>');
+		$('#menugroup').append('<button type="button" class="open" tabindex="0"><img id="menuListBtn" src="../../images/common/btn_location_open.gif" alt="메뉴열기"/></button>');
+		$('#menugroup').append('<div class="abs_link generated"><ul id="groupmenulist"></ul></div>');
+	
+	
+		var menugroup='';
+		
+		//
+		//0
+		//4
+		//4
+		//공개정보
+		//===========================
+		var menulnk = ('' == '#'? (''==''? '#': '') : '#' );
+		if('' == '') {
+			
+			menugroup +='<li><a href="'+menulnk+'">공개정보</a></li>';
+		}
+		else {
+			menugroup +='<li><a href="'+menulnk+'?=">공개정보</a></li>';
+		}
+		
+		
+		//
+		//4
+		//59
+		//1
+		//  정보목록
+		//===========================
+		var menulnk = ('' == '/othicInfo/infoList/infoList.do'? (''==''? '#': '') : '/othicInfo/infoList/infoList.do' );
+		if('' == '') {
+			
+			menugroup +='<li><a href="'+menulnk+'">&nbsp;&nbsp;정보목록</a></li>';
+		}
+		else {
+			menugroup +='<li><a href="'+menulnk+'?=">&nbsp;&nbsp;정보목록</a></li>';
+		}
+		
+		
+		//
+		//4
+		//60
+		//2
+		//  원문정보
+		//===========================
+		var menulnk = ('' == '/othicInfo/infoList/orginlInfoList.do'? (''==''? '#': '') : '/othicInfo/infoList/orginlInfoList.do' );
+		if('' == '') {
+			
+			menugroup +='<li><a href="'+menulnk+'">&nbsp;&nbsp;원문정보</a></li>';
+		}
+		else {
+			menugroup +='<li><a href="'+menulnk+'?=">&nbsp;&nbsp;원문정보</a></li>';
+		}
+		
+		
+		//
+		//4
+		//61
+		//3
+		//  기관장결재문서
+		//===========================
+		var menulnk = ('' == '/othicInfo/infoList/mnstrSanDocList.do'? (''==''? '#': '') : '/othicInfo/infoList/mnstrSanDocList.do' );
+		if('' == '') {
+			
+			menugroup +='<li><a href="'+menulnk+'">&nbsp;&nbsp;기관장결재문서</a></li>';
+		}
+		else {
+			menugroup +='<li><a href="'+menulnk+'?=">&nbsp;&nbsp;기관장결재문서</a></li>';
+		}
+		
+		
+		//
+		//4
+		//62
+		//4
+		//  사전정보
+		//===========================
+		var menulnk = ('' == '/othicInfo/prevOpenInfo/othinfBefInfList.do'? (''==''? '#': '') : '/othicInfo/prevOpenInfo/othinfBefInfList.do' );
+		if('' == '') {
+			
+			menugroup +='<li><a href="'+menulnk+'">&nbsp;&nbsp;사전정보</a></li>';
+		}
+		else {
+			menugroup +='<li><a href="'+menulnk+'?=">&nbsp;&nbsp;사전정보</a></li>';
+		}
+		
+		
+		//
+		//62
+		//123
+		//1
+		//    업무추진비
+		//===========================
+		var menulnk = ('' == '/mrfnIntrst/jobPrtnCt/jobPrtnCt.do'? (''==''? '#': '') : '/mrfnIntrst/jobPrtnCt/jobPrtnCt.do' );
+		if('' == '') {
+			
+			menugroup +='<li><a href="'+menulnk+'">&nbsp;&nbsp;&nbsp;&nbsp;업무추진비</a></li>';
+		}
+		else {
+			menugroup +='<li><a href="'+menulnk+'?=">&nbsp;&nbsp;&nbsp;&nbsp;업무추진비</a></li>';
+		}
+		
+		
+		//
+		//4
+		//63
+		//5
+		//  정책실명제
+		//===========================
+		var menulnk = ('' == '/othicInfo/plcyChgrRealNm/polRnInsttList.do'? (''==''? '#': '') : '/othicInfo/plcyChgrRealNm/polRnInsttList.do' );
+		if('' == '') {
+			
+			menugroup +='<li><a href="'+menulnk+'">&nbsp;&nbsp;정책실명제</a></li>';
+		}
+		else {
+			menugroup +='<li><a href="'+menulnk+'?=">&nbsp;&nbsp;정책실명제</a></li>';
+		}
+		
+		
+		//
+		//4
+		//64
+		//6
+		//  주요인사 일정공개
+		//===========================
+		var menulnk = ('' == '/othicInfo/mnstrSanDoc/mnstrSanDocList.do'? (''==''? '#': '') : '/othicInfo/mnstrSanDoc/mnstrSanDocList.do' );
+		if('' == '') {
+			
+			menugroup +='<li><a href="'+menulnk+'">&nbsp;&nbsp;주요인사&nbsp;일정공개</a></li>';
+		}
+		else {
+			menugroup +='<li><a href="'+menulnk+'?=">&nbsp;&nbsp;주요인사&nbsp;일정공개</a></li>';
+		}
+		
+		
+		//
+		//4
+		//66
+		//8
+		//  BEST정보 모아보기
+		//===========================
+		var menulnk = ('' == '/othicInfo/infoList/bestInfo.do'? (''==''? '#': '') : '/othicInfo/infoList/bestInfo.do' );
+		if('' == '') {
+			
+			menugroup +='<li><a href="'+menulnk+'">&nbsp;&nbsp;BEST정보&nbsp;모아보기</a></li>';
+		}
+		else {
+			menugroup +='<li><a href="'+menulnk+'?=">&nbsp;&nbsp;BEST정보&nbsp;모아보기</a></li>';
+		}
+		
+		
+		$('#groupmenulist').find('LI').remove();
+		$('#groupmenulist').append(menugroup);
+		
+		
+		$(document).prop('title',menuNm);
+		
+	});
+	
+	
+	
+	
+	</script>
+
+	<script>
+	;(function($){
+	$(function() {
+
+	});
+	})(window.jQuery);
+	</script>
+
+<title>정보공개포털</title>
+</head>
+<body>
+<div id="wrap">
+    <div id="skip">
+        <a href="#content">본문 바로가기</a>
+    </div>
+	<!-- HEADER START-->
+	
+
+
+
+
+
+
+
+
+
+
+
+	<div class="header">
+		<div class="head" title="/othicInfo/infoList/infoListDetl.do">
+			<p class="eg_logo"><img src="/images/common/eg_logo.png" alt="전자정부"/>이 누리집은 대한민국 공식 전자정부 누리집입니다.</p>
+			<h1><a href="/com/main/mainView.do?mainBgGubun=search" title="메인화면 이동"><img src="/images/common/logo.gif" alt="open.go.kr 정보공개"/></a></h1>
+			<div class="search_box">
+				<div class="search_check">
+					<span class="m-input">
+						<input type="text" title="검색할 단어를 입력해주세요." name="kwdUnit" id="kwdUnit" placeholder="검색할 단어를 입력해주세요." onkeyup="javascript:if(event.keyCode == 13){goHeaderBtnUnitSrh();}"/>
+						<input type="hidden" title="기관구분" name="insttSeCd" id="insttSeCd" value=""/>
+						<input type="hidden" title="포함단어"  name="mustKeyword" id="mustKeyword" value=""/>
+						<input type="hidden" title="제외단어"  name="ignoreKeyword" id="ignoreKeyword" value=""/>
+						<input type="hidden" title="초중고포함여부"  name="eduYn" id="eduYn" value=""/>
+						<input type="hidden" title="검색필드"  name="srchFd" id="srchFd" value=""/>
+						<input type="hidden" title="검색시작일자"  name="startDate" id="startDate" value=""/>
+						<input type="hidden" title="검색종료일자"  name="endDate" id="endDate" value=""/>
+						<input type="hidden" title="기관코드"  name="insttCd" id="insttCd" value=""/>
+						<input type="hidden" title="상세검색"  name="detailSearch" id="detailSearch" value=""/>
+						<input type="hidden" title="기관명"  name="insttCdNm" id="insttCdNm" value=""/>
+						<input type="hidden" title="메인화면조회여부"  name="searchMainYn" id="searchMainYn" value=""/>
+						<input type="hidden" title="이전검색키워드"  name="preKwds" id="preKwds" value=""/>
+						<input type="hidden" title="결과내검색"  name="reSrchFlag" id="reSrchFlag" value=""/>
+					</span>
+					<button type="button" id="btnUnitSrh" tabindex="0"><img src="/images/common/btn_head_search.gif" title="검색" alt="검색"/></button>
+				</div>
+			<div class="wrod_check">
+					<ul>
+						<li><a href="#">자동완성 단어</a></li>
+						<li><a href="#">자동완성 단어</a></li>
+						<li><a href="#">자동완성 단어</a></li>
+					</ul>
+					<div class="">
+						<!--  <button type="button">자동완성 끄기</button> -->
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="btn_area" style="padding-right: 0px;">
+				
+				
+					<a href="/com/login/memberLogin.do" title="로그인화면 이동">로그인</a>
+					<a href="/mberSvc/mber/persionIn.do" title="회원가입화면 이동">회원가입</a>
+					<a href="/com/sitemap/sitemap.do" title="사이트맵 이동">사이트맵</a>
+					
+			</div>
+			
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/js/searchedkwd.js"></script>
+	<script type="text/javaScript" language="javascript" >
+		
+	//<![CDATA[	
+
+		//통합검색
+		$("#btnUnitSrh").bind("click", function(){
+			//goBtnUnitSrh();
+			//상세검색이 아니므로 메인으로 조회
+			goHeaderBtnUnitSrh();
+		});
+
+		//상세검색
+		$(".btn_detail").bind("click", function(){
+			
+			popupDetlFn();
+		});
+		
+    	// 상세검색이동 팝업 닫기
+		closePop =function(){
+			closeModal(event);
+			$(".btn_detail").focus();
+		};
+		
+		/* 메인과 상세팝업 구분을 위해서 추가함 */ 
+		goHeaderBtnUnitSrh = function(){
+			
+			//메인에서 조회하는 것인지 상세 팝업인지 구분
+			$("input[name='searchMainYn']").val("Y");
+			$("input[name='detailSearch']").val("false");		
+
+			goBtnUnitSrh();
+		}
+		
+		/* 통합결과화면 이동 */ 
+ 		goBtnUnitSrh = function() { 
+ 			
+
+			var strUrl = "/com/search/uniSrhList.do";
+			var param = new Object();
+			$("#kwdUnit").val($("#kwdUnit").val().replace(/'/gi,""));
+			param.kwd 	= $("#kwdUnit").val();
+			param.insttSeCd 	= $("input[name='insttSeCd']").val();
+			param.insttCd 	= $("input[name='insttCd']").val();
+			param.mustKeyword 	= $("input[name='mustKeyword']").val();
+			param.ignoreKeyword 	= $("input[name='ignoreKeyword']").val();
+			param.eduYn 	= $("input[name='eduYn']").val();
+			param.srchFd 	= $("input[name='srchFd']").val();
+			param.startDate 	= $("input[name='startDate']").val();
+			param.endDate 	= $("input[name='endDate']").val();
+			//param.reSrchFlag = $("input[name='reSrchFlag']").val() ;
+			param.reSrchFlag   = $("input[name='reSrchFlag']").val() ;
+			
+			//상세조회여부 세팅
+			param.detailSearch = $("input[name='detailSearch']").val();		
+			param.insttCdNm = $("input[name='insttCdNm']").val() ;
+			param.searchMainYn = $("input[name='searchMainYn']").val();
+
+			if($("#kwdUnit").val().trim() != ""){
+				
+				var kwdUnit = $("#kwdUnit").val().trim();
+				
+				kwdUnit = kwdUnit.replace(/[<>()#&\/]/g, "");
+				
+				if (kwdUnit == ""){
+					alert("검색어에 특수문자만 사용하는 건 불가능 합니다. 수정해주세요")
+					return
+				}
+				callKwdCookie(kwdUnit);
+
+				//내가찾은 검색어
+	 			//callKwdCookie($("#m_input").val().trim());
+				
+				param.kwd 	= $("#kwdUnit").val().trim();
+
+				//결과내재검색을 위해서 세팅
+				var chkYn = "N";
+				var preKwds = new Array();
+				
+				if($("input[name='reSrch']").is(":checked") == true) {
+					//결과내재검색이면 기존 검색키워드에 키워드 추가	 -> 서비스에서 키워드 같은것은 제외			
+					var tempKwds = new Array();
+					tempKwds = $("input[name='preKwds']").val().split(",");
+
+					if(tempKwds.length >= 0){
+						for (var i = 0; i < tempKwds.length; i++){
+							if(null != tempKwds[i] && "null" != tempKwds[i] && "" != tempKwds[i]){
+								preKwds.push(tempKwds[i]);
+								if(param.kwd == tempKwds[i]) {
+									chkYn = "Y"
+								}
+							}
+						}
+					}
+					
+					//같은 것이 없으면 입력
+					if(chkYn == "N"){
+						preKwds.push(param.kwd);
+					}
+
+					param.preKwds = JSON.stringify(preKwds);
+
+				} else {
+					//결과내재검색이 아니면 키워드만 세팅
+					preKwds.push(param.kwd);
+					param.preKwds = JSON.stringify(preKwds);
+				}
+				
+				util_movePage(strUrl, param);
+				
+			}else{
+				
+				alert("검색어를 입력해 주세요.");
+				$("#kwdUnit").focus();
+				return false;
+			}
+		};
+		
+		/* 상세검색이동 */ 
+		popupDetlFn = function() {
+			
+						
+			/* var _width ='1171';
+			var _height ='549';
+			var _left = (document.body.offsetWidth /2) - (500/2);
+			var _top = (document.body.offsetHeight /2) - (800/2);
+			
+			window.open('/com/search/searchDetlPop.do','상세검색','status= no, width='+_width+',height='+_height+',top='+_top+',left='+_left); */
+			
+			//결과내재검색의 키워드가 있으면 포함단어에 추가
+			var mustKeyword = "";
+			
+			if($("input[name='reSrch]").is(":checked") == true){
+				if($("#kwdUnit").val().trim() != ""){
+					mustKeyword = $("#kwdUnit").val().trim();
+				}
+			}
+			
+			
+			var param = new Object();
+			
+			param.mustKeyword 	= mustKeyword;
+			param.reSrchFlag  	= result.parameterVO.reSrchFlag;
+			
+			param.eduYn 	= result.parameterVO.eduYn;
+			param.srchFd 	= result.parameterVO.srchFd;
+			param.insttSeCd 	= result.parameterVO.insttSeCd;
+			param.insttCd 	= result.parameterVO.insttCd;
+			param.insttCdNm 	= result.parameterVO.insttCdNm;
+			param.mustKeyword 	= result.parameterVO.mustKeyword;
+			param.ignoreKeyword 	= result.parameterVO.ignoreKeyword;
+			param.startDate 	= result.parameterVO.startDate;
+			param.endDate 	= result.parameterVO.endDate;
+			
+    		//param.rqestSj = $.trim($("#rqestSj").val());
+			jQuery(this).JQmodal({
+   			 popUrl        : "/com/search/searchDetlPop.do"
+   			,type          : "modal"
+   			,width         : "1171"
+   			,height        : "591"
+   			,bgColor  : "#fff"
+   			,opacityBg : "0.1"
+   			,param         : param
+   		});	
+				
+		};
+
+		let isAutocompleteEnabled = localStorage.getItem('autocompleteEnabled') !== 'false';
+		let cache = {};
+		let cacheTimeOut = 5 * 60 * 1000; // 5분
+		
+		$("#kwdUnit").autocomplete({
+			source : function(request, response){
+			    let term = request.term;
+				let cacheEntry = cache[term];
+				let isAutocompleteEnabledYn = isAutocompleteEnabled ? '자동완성기능 끄기' : '자동완성기능 켜기';
+				let offset = $('.m-input').eq(0).offset(),
+				$ui = $(".ui-autocomplete"),
+				buttonDiv = $('<li class="ui-menu-item-button last" role="menuitem" id="tempAdd" tabindex="-1">'+'<button class="ui-corner-all">'+ isAutocompleteEnabledYn +'</button>'+'</li> ');
+				buttonDiv.data("ui-autocomplete-item", {label:'', value:''});
+			
+				
+				if(cacheEntry && (Date.now() - cacheEntry.timestamp < cacheTimeOut)){
+					try{	
+						buttonDiv.find('button').on('click', function(){
+							if(!isAutocompleteEnabled){
+								$(this).text('자동완성기능 끄기');
+								isAutocompleteEnabled = true;
+							}else{
+								$(this).text('자동완성기능 켜기');
+								isAutocompleteEnabled = false;
+							}
+							autoButton();
+							
+							localStorage.setItem('autocompleteEnabled',isAutocompleteEnabled);
+						});
+						response(cacheEntry.data);
+						autoButton();
+					}catch(e){
+						autoButton();
+					}
+					$ui.append(buttonDiv);
+				}else{
+					$.ajax({
+						url: "/com/search/searchAtmcCmpltKwd.ajax",
+						dataType: "json",
+						data: {"maxCount":"5","term":$("input[name='kwdUnit']").val()},		//10건, 키워드명 조회
+						success: function(data){
+							try{
+								$ui.eq(0).css({'top' : (offset.top) + 'px', 'left' : offset.left + 'px'});
+								
+								let resultArray = [];
+								data.rtnList.result.forEach(function(item){
+									if(typeof item === 'object' && item !== null){
+										let key = Object.keys(item)[0];
+										let value = item[key];
+										
+										try {
+											let parsedValue = JSON.parse(value);
+											resultArray = resultArray.concat(parsedValue);
+										} catch (e){
+											console.log('resultArray:', resultArray);
+										}
+									}
+								});
+								
+								buttonDiv.find('button').on('click', function(){
+									if(!isAutocompleteEnabled){
+										$(this).text('자동완성기능 끄기');
+										isAutocompleteEnabled = true;
+									}else{
+										$(this).text('자동완성기능 켜기');
+										isAutocompleteEnabled = false;
+									}
+									autoButton();
+									
+									localStorage.setItem('autocompleteEnabled',isAutocompleteEnabled);
+								});
+								// 캐시에 저장
+								cache[term] = {data: resultArray, timestamp: Date.now()};
+								response(resultArray);
+								autoButton();
+							} catch (error){
+								autoButton();
+							}
+
+							// 자동완성 html 생성
+							$ui.append(buttonDiv);
+						},
+						
+						error: function(xhr,status, error){
+							console.log("Ajax error", status, error);
+						}
+					});
+				}
+			},
+			select: function(event, ui){
+			    if(isAutocompleteEnabled){
+					$("#kwdUnit").val(ui.item.value);
+			    }
+				goBtnUnitSrh();
+				return false;
+			},
+			focus: function(){	//스크롤 이동시 조회여부
+			    let menu = $(".ui-autocomplete");
+			    let actItem = menu.find(".ui-state-focus");
+			    
+			    if(actItem.length && actItem.attr("id") === "tempAdd"){
+			        if(event.key === "ArrowUp" || event.key === "ArrowDown") {
+				        let nextItem = event.key === "ArrowUp" ? actItem.prevAll(":not(.last)").first() : actItem.nextAll(":not(.last)").first();
+				        if(nextItem.length){
+				            actItem.removeClass("ui-state-focus");
+				            nextItem.addClass("ui-state-focus").trigger("mouseover");
+				        }
+				    }
+			    }
+				return false;
+			},
+			open: function(event, ui){
+				
+			},
+			disabled: false,		//자동완성끄기여부
+			minLenth: 0,			//최소글자수
+			autoFocus: true,		//첫행에 포커스
+			delay: 500				//입력 딜레이시간
+		});
+		
+		function autoButton(){
+			if(isAutocompleteEnabled){
+				$(".ui-menu-item").show();
+				$(".ui-menu-item-button").show();
+			}else{
+				$(".ui-menu-item").hide();
+				$(".ui-menu-item-button").show();
+			}
+		}
+		
+		function cleanCache(){
+			let now = Date.now();
+			for(var key in cache){
+				if(cache.hasOwnProperty(key)){
+					if(now - cache[key].timestamp > cacheTimeOut){
+						delete cache[key];
+					}
+				}
+			}
+		}
+		
+		setInterval(cleanCache, cacheTimeOut);
+		
+	//]]>
+	</script>	
+	<!-- HEADER END -->
+	
+	<!-- LEFT START -->
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="rnb">
+		<ul class="icon_list">
+			<li class="dep01 icon01"><a href="/com/login/memberLogin.do">로그인</a></li>
+			
+			
+			<li class="dep01 icon03">
+				<a href="javascript:void(0)">주제별</a>
+				<div class="dep02">
+					<strong>주제별정보</strong>
+					<p>
+						각 기관에서 공개한 행정정보를 12가지의 관심분야로 분류해 제공합니다. 
+					</p>
+					<ul class="sec_list">
+						<li class="icon01"><a href="/com/tema/temaSrhList.do?topictype=00026">건강</a></li>
+						<li class="icon02"><a href="/com/tema/temaSrhList.do?topictype=00034">경제</a></li>
+						<li class="icon03"><a href="/com/tema/temaSrhList.do?topictype=00012">교육</a></li>
+						<li class="icon04"><a href="/com/tema/temaSrhList.do?topictype=00027">규제개혁</a></li>
+						<li class="icon05"><a href="/com/tema/temaSrhList.do?topictype=00016">복지</a></li>
+						<li class="icon06"><a href="/com/tema/temaSrhList.do?topictype=00014">안전</a></li>
+						<li class="icon07"><a href="/com/tema/temaSrhList.do?topictype=00009">여가</a></li>
+						<li class="icon08"><a href="/com/tema/temaSrhList.do?topictype=00031">보육</a></li>
+						<li class="icon09"><a href="/com/tema/temaSrhList.do?topictype=00025">일자리</a></li>
+						<li class="icon10"><a href="/com/tema/temaSrhList.do?topictype=00010">주택</a></li>
+						<li class="icon11"><a href="/com/tema/temaSrhList.do?topictype=00035">행정재정</a></li>
+						<li class="icon12"><a href="/com/tema/temaSrhList.do?topictype=00086">환경</a></li>
+					</ul>	
+				</div>
+			</li>
+			<li class="dep01 icon04">
+				<a href="javascript:void(0)">공개정보</a>
+				<div class="dep02">
+					<strong>공개정보</strong>
+					<p>
+						기관에서 공개한 정보를 유형별로 구분해 원하시는 정보를 조금 더 빠르게 찾을 수 있도록 제공합니다.
+					</p>
+					<ul class="normal_list">
+						<!-- <li><a href="/othicInfo/infoList/infoList.do"><span>정보목록</span></a></li>
+						<li><a href="/othicInfo/infoList/orginlInfoList.do"><span>원문정보</span></a></li>
+						<li><a href="/othicInfo/infoList/mnstrSanDocList.do"><span>기관장결재문서</span></a></li> -->
+						<li><a href="javascript:void(0)" onclick="movePageNHistoryPush('/othicInfo/infoList/infoList.do');"><span>정보목록</span></a></li>
+						<li><a href="javascript:void(0)" onclick="movePageNHistoryPush('/othicInfo/infoList/orginlInfoList.do');"><span>원문정보</span></a></li> 
+						<li><a href="javascript:void(0)" onclick="movePageNHistoryPush('/othicInfo/infoList/mnstrSanDocList.do');"><span>기관장결재문서</span></a></li>
+					</ul>
+					<ul class="normal_list">
+						<!-- <li><a href="/othicInfo/prevOpenInfo/othinfBefInfList.do"><span>사전정보</span></a> -->
+						<li><a href="javascript:void(0)" onclick="movePageNHistoryPush('/othicInfo/prevOpenInfo/othinfBefInfList.do');"><span>사전정보</span></a>
+							<ul>
+								<li><a href="/mrfnIntrst/jobPrtnCt/jobPrtnCt.do"><span>업무추진비</span></a></li>
+								<li class="link"><a href="http://btis.mpm.go.kr/cmm/main/mainPage.do?mois=170726" target="_blank"><span>국외출장 여비</span><img src="/images/common/bg_rnb_link.png" alt="새창"></a></li>
+								<li class="link"><a href="https://www.lofin365.go.kr/portal/LF2210000.do?tab=gov&byatcClsTy=LCTBBDG21&pfalndcCd=RD13&rgnzDvCd=02&fyr=2025" target="_blank"><span>자치단체복지비</span><img src="/images/common/bg_rnb_link.png" alt="새창"></a></li>
+							</ul>
+						</li>
+						<li><a href="/othicInfo/plcyChgrRealNm/polRnInsttList.do"><span>정책실명제</span></a></li>
+						<li><a href="/othicInfo/mnstrSanDoc/mnstrSanDocList.do"><span>주요인사 일정공개</span></a></li>
+						<!-- <li><a href="/othicInfo/openArgee/othWrtList.do"><span>대국민공개정보</span></a></li> -->
+					</ul>
+					<ul class="normal_list">
+						<li><a href="/othicInfo/infoList/bestInfo.do"><span>BEST정보모아보기</span></a></li>
+					</ul>
+                    	
+				</div>
+			</li>
+			<li class="dep01 icon05 ">
+				<a href="javascript:void(0)">청구/소통</a>
+				<div class="dep02">
+					<strong>청구/소통</strong>
+					<p>
+						정보공개 청구, 신청내역 조회, 공지사항 등 정보공개시스템 온라인 서비스를 제공합니다.
+					</p>
+					<ul class="normal_list">
+						<li><a href="/rqestMlrd/notice/noticeList.do"><span>공지사항</span></a></li>
+						<li><a href="/rqestMlrd/faq/reqstMlrdFaqList.do"><span>자주묻는질문</span></a></li>
+						<li><a href="/rqestMlrd/rqestReg/rqestRegWritingForm.do"><span>정보공개청구</span></a></li>
+						<li><a href="/rqestMlrd/fobjct/fobjectList.do"><span>이의신청</span></a></li>
+						<li><a href="/rqestMlrd/othRecept/reastOtherFobjectList.do"><span>제3자의견·이의</span></a></li>
+						<li><a href="/rqestMlrd/rqestDtls/reqstDocList.do"><span>신청내역조회</span></a>
+							<ul>
+								<li><a href="/rqestMlrd/rqestDtls/reqstDocList.do"><span>정보공개청구내역</span></a></li>
+								<li><a href="/rqestMlrd/rqestDtls/reastFobjectList.do"><span>이의신청내역</span></a></li>
+							</ul>
+						</li>
+						<li><a href="/rqestMlrd/sugestQestn/sugestQestnList.do"><span>문의·신고</span></a></li>
+					</ul>	
+				</div>
+			</li>
+			<li class="dep01 icon07">
+				<a href="javascript:void(0)" title="정보공개 소개를 위한 메뉴">정보공개란?</a>
+				<div class="dep02">
+					<strong>정보공개란?</strong>
+					<p>
+						국민의 알권리를 보장하고 국정운영에 대한 참여를 유도하기 위한 제도입니다.
+					</p>
+					<ul class="normal_list">
+						<li><a href="/infOthbc/infOthbc/infOthbcCont.do"><span>정보공개란?</span></a>
+							<ul>
+								<li><a href="/infOthbc/infOthbc/infOthbc.do"><span>정보공개제도</span></a></li>
+								<li><a href="/infOthbc/infOthbc/infOthbcFee.do"><span>수수료안내</span></a></li>
+								<li><a href="/infOthbc/infOthbc/infOthbcLaword.do"><span>법령·서식</span></a></li>
+								<li><a href="/infOthbc/infOthbc/infOthbcInfofc.do"><span>접수처</span></a></li>
+							</ul>
+						</li>
+						<li><a href="/infOthbc/numberInfoOthbc/orgDwld.do"><span>숫자로보는 정보공개</span></a>
+							<ul>
+								<li><a href="/infOthbc/numberInfoOthbc/orgDwld.do"><span>원문다운로드수</span></a></li>
+								<li><a href="/infOthbc/numberInfoOthbc/orgOthbcRate.do"><span>원문공개율</span></a></li>
+								<li><a href="/infOthbc/numberInfoOthbc/befInf.do"><span>사전정보수</span></a></li>
+								<li><a href="/infOthbc/numberInfoOthbc/befInfUseSttus.do"><span>사전정보이용현황</span></a></li>
+								<li><a href="/infOthbc/numberInfoOthbc/ioBigdata.do"><span>정보공개빅데이터</span></a></li>
+							</ul>
+						</li>
+						<li><a href="/infOthbc/prDta/prDtaBiInfo.do"><span>홍보자료</span></a>
+							<ul>
+								<li><a href="/infOthbc/prDta/prDtaBiInfo.do"><span>BI안내</span></a></li>
+								<li><a href="/infOthbc/prDta/prDtaImage.do"><span>홍보영상</span></a></li>
+								<!-- 
+								<li><a href="/infOthbc/prDta/prDtaInfrcn.do"><span>홍보캐릭터소개</span></a></li>
+								<li><a href="/infOthbc/prDta/prDtaBrochWebton.do"><span>웹툰&브로슈어</span></a></li>
+								<li><a href="/infOthbc/prDta/prDtaPssrpList.do"><span>공모전 입상작</span></a></li>
+								 -->
+							</ul>
+						</li>
+						<li><a href="/infOthbc/dta/dtaDta.do"><span>자료실</span></a></li>
+					</ul>	
+				</div>
+			</li>			
+			<li class="dep01 icon08">
+				<a href="javascript:void(0)" onclick="mainIfrmpPopOpen();" title="새창열림" >정보공개체험</a>
+			</li>
+		</ul>
+		<ul class="text_list">
+			<li><a href="/mberSvc/mber/persionIn.do">회원가입</a></li>
+			
+			
+			<li><a href="/com/sitemap/sitemap.do">사이트맵</a></li>
+			<!--   <li class="top"><a href="#">맨위로</a></li>-->
+			<li class="top"><a href="javascript:void(0);"  onclick="moveToTop();">맨위로</a></li>
+			<li class="bottom"><button onclick="moveToBottom();" tabindex="0">맨아래로<span></span></button></li>
+		</ul>
+		<div class="chatBotIconBox"> 
+            <div class="chatBot">
+                <button class="loadingImgSize">
+                    <span id="chatbot_area">질의응답 서비스<img src="/images/chatbot/nCustomer/icon_chatbot.png" alt="chatbot"></span>
+                </button>
+            </div>
+        </div>	
+	</div>
+<script type="text/javaScript">
+	let nowUrl = window.location.pathname,
+		$icon_list = $('.icon_list a');
+
+	
+
+	function movePageNHistoryPush(url) {
+		var param = new Object();
+		util_movePage(url, param);
+	}
+	
+
+	// 현재 페이지의 left 메뉴가 어디있는지 활성화한다.
+	function onActiveMenu(){
+		// 현재 URL의 탭 활성화
+		$.each($icon_list, function(index, obj){
+			if ($(obj).attr('href').indexOf(nowUrl) > -1){
+				$(obj).closest('.dep01').addClass('active');
+				return false;
+			}
+		});
+	}
+
+	function moveToBottom(){
+		window.scrollTo(0,document.querySelector('body').scrollHeight);
+		$('#mark_img').find('a').focus();
+	}
+	
+	function moveToTop(){
+		window.scrollTo(0,0);
+		$('a').eq(0).focus();
+	}
+
+	 /**
+	 * 정보공개체험
+	 */
+	function mainIfrmpPopOpen() {
+		var url   = "/com/main/MainIfrmpPop.do";
+			var option = new Object();
+				option.width  = "850";          // 넓이1200
+				option.height = "950";          // 높이700
+				//option.type   = "modal";       // 모달 팝업일 경우 modal, 윈도우팝업일경우 window
+				option.type   = "window";       // 모달 팝업일 경우 modal, 윈도우팝업일경우 window
+			
+			var param = new Object();
+
+				util_modalPage(url, option, param);
+	}
+	
+	// 현재 URL의 탭 활성화
+	onActiveMenu();
+		
+	$('.dep01.icon02').click(function() { 
+	    
+	    let myPageMenu = $(this).find('.dep02')[0];
+	    
+	    // 위치 계산을 위해 임시로 노출시킨다.
+	    $(myPageMenu).css({ visibility: 'hidden', display: 'block', top: '0px' });
+	    
+	    // 메뉴가 브라우저 하단을 넘어가는 길이를 구한다.
+	    // 그 길이는 gap에 저장된다.
+	    let myPagePosition = myPageMenu.getBoundingClientRect();
+	    let viewHeight = $(window).innerHeight();
+	    let gap = myPagePosition.bottom - viewHeight;
+	    
+	    if(gap > 0) {
+	    	$(myPageMenu).css({
+		       	top: '-'+ gap + 'px',
+       			visibility: 'visible'
+    		});
+	    } else {
+	        $(myPageMenu).css({
+		       	top: '0px',
+       			visibility: 'visible'
+    		});
+	    }
+	});
+</script>
+	<!-- LEFT END -->
+	
+	<div id="content" class="content">
+
+		<!-- CONTENT START -->
+		
+	<input type="hidden"  id="prevUrl" name="prevUrl" title="이전경로" />
+	<input type="hidden"  id="kwd" name="kwd" title="검색어" />
+	<input type="hidden"  id="pageStartDate" name="startDate" title="검색시작일자" />
+	<input type="hidden"  id="pageEndDate" name="endDate" title="검색종료일자" />
+	<input type="hidden"  id="searchInsttCd" name="searchInsttCd" title="검색기관" />
+	<input type="hidden"  id="searchInsttCdNm" name="searchInsttCdNm" title="검색기관명" />
+	<input type="hidden"  id="pageInsttSeCd" name="insttSeCd" title="기관구분" />
+	<input type="hidden"  id="nstSeCd" name="nstSeCd" title="기관구분" />
+	<input type="hidden"  id="topictype" name="topictype" title="주제" />
+	<input type="hidden"  id="pageEduYn" name="eduYn" title="초중고포함" />
+		
+		<div class="tit_area">
+			<!--   <h2 id="title"> 상세</h2> -->
+			<h2>원문정보상세</h2>
+			<ul class="location">
+				<li><a href="#">홈</a></li>
+				<li><a href="#">공개정보</a></li>
+				<!--  <li><a href="#" id="title2"> 상세</a></li>  --> 
+				<li><button type="button" class="open"><img src="../../images/common/btn_location_open.gif" alt="메뉴열기"/></button></li>
+			</ul>
+		</div>
+		
+		<form id="detlForm" name="detlForm" method="post">
+			<div class="tableSt03">
+				<table  class="gridTable" >
+					<caption>정보목록 상세내용으로 제목, 기관명, 담당부서명, 담당자명, 생산일자, 문서번호, 보존기간, 단위업무, 공개여부, 분류체계, 본문파일, 붙임파일로 구성되어 있습니다.</caption>
+					<colgroup>
+						<col style="width:165px;"/>
+						<col/>
+						<col style="width:165px;"/>
+						<col/>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th id="infoDetlTableInfoSj" scope="row"><strong>제목</strong></th>
+							<td headers="infoDetlTableInfoSj" colspan="3" id="infoSj">
+								<!-- <p><strong ></strong></p> -->
+							</td>
+						</tr>
+						<tr>
+							<th id="infoDetlTablePrcsNstNm" scope="row"><strong>기관명</strong></th>
+							<td headers="infoDetlTablePrcsNstNm" id="prcsNstNm" >
+							</td>
+							<th id="infoDetlTableChrgDeptNm" scope="row"><strong>담당부서명</strong></th>
+							<td headers="infoDetlTableChrgDeptNm" id="chrgDeptNm" >
+							</td>
+						</tr>
+						<tr>
+							<th id="infoDetlTableChgrNmpn" scope="row"><strong>담당자명</strong></th>
+							<td headers="infoDetlTableChgrNmpn" id="chgrNmpn">
+							</td>
+							<th id="infoDetlTablePrdnDtView" scope="row"><strong>생산일자</strong></th>
+							<td headers="infoDetlTablePrdnDtView" id="prdnDtView">
+							</td>
+						</tr>
+						<tr>
+							<th id="infoDetlTableDocNo" scope="row"><strong>문서번호</strong></th>
+							<td headers="infoDetlTableDocNo" id="docNo">
+							</td>
+							<th id="infoDetlTablePrsrvPdCd" scope="row"><strong>보존기간</strong></th>
+							<td headers="infoDetlTablePrsrvPdCd" id="prsrvPdCd">
+							</td>
+						</tr>
+						<tr>
+							<th id="infoDetlTableUnitJobNm" scope="row"><strong>단위업무</strong></th>
+							<td headers="infoDetlTableUnitJobNm" id="unitJobNm"></td>
+							<th id="infoDetlTableDlsrCdNm" scope="row"><strong>공개여부</strong></th>
+							<td headers="infoDetlTableDlsrCdNm" id="dlsrCdNm">
+							</td>
+						</tr>
+						<tr>
+							<th id="infoDetlTableNstClNm" scope="row"><strong>분류체계</strong></th>
+							<td headers="infoDetlTableNstClNm" colspan="3" id="nstClNm">
+							</td>
+						</tr>
+						<tr id="oppLink">
+							<th id="infoDetlTableOppUrlTxt" scope="row"><strong id="downLinkNm">다운로드링크</strong></th>
+							<td headers="infoDetlTableOppUrlTxt" colspan="3" id="oppUrlTxt">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div id="popup_wrap" class="pdf" style="display:none; position:relative; left:170px; top:-50px; background-color: white;z-index:998;" >
+					<div class="popup_content" style="margin:0; ">
+						<ul>
+							<li class="" id="step1"><i></i><span>STEP 1<strong>파일전송</strong></span></li>
+							<li class="" id="step2"><i></i><span>STEP 2<strong>파일수신</strong></span></li>
+							<li class="" id="step3"><i></i><span>STEP 3<strong>개인정보<br>필터링</strong></span></li>
+							<li class="" id="step4"><i></i><span>STEP 4<strong>PDF 변환</strong></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="btn_area_center">
+				<span class="left">
+					<a href="javascript:goRetInfoFn();" class="btn_type02" id="retInfoBtn" >연관정보 보기</a>
+				</span>
+			</div> -->
+			<div class="info_wrap mt40 hide" id="retInfo">
+				<h3 style="margin-bottom:10px">연관정보</h3>
+				<div class="tableSt01">
+					<table>
+						<caption>연관정보 리스트로 제목, 기관명, 담당부서명, 단위업무, 생산일자로 구성되어 있으며 제목 클릭 시 상세 페이지로 이동됩니다.</caption>
+						<colgroup>
+							<col style="width:85px;"/>
+							<col/>
+						</colgroup>
+						<tbody>
+							<tr id="dateView">
+								<th scope="row"><strong>검색기간</strong></th>
+								<td>
+									<div class="">
+										<span class="input_days" style="width:775px">
+											<span class="input_area">
+												<label class="access" for="startDt">시작하는날짜</label>
+												<input type="text" id="startDt" name="startDt" class="date" title="날짜선택"/>
+											</span>
+											-
+											<span class="input_area">
+												<label class="access"  for="endDt">종료하는날짜</label>
+												<input type="text" id="endDt" name="endDt" class="date" title="날짜선택"/>
+											</span>
+										</span>
+										<button type="button" class="btn_search" id="searchBtn">검색</button>
+									</div>
+								</td>
+							</tr>
+							<tr style="display:none;">
+								<th scope="row"><strong><!-- <label for="schRqestSj"> -->검색유형<!-- </label> --></strong></th>
+								<td>
+									<div class="search_box">
+										<span class="input_area" style="width:775px">
+											<input type="radio" id="insttSeCd_1" name="insttSeCd" value="T" checked="checked"/><label for="insttSeCd_1"><span style="font-size:14px">목록</span></label>
+											<input type="radio" id="insttSeCd_2" name="insttSeCd" value="F"/><label for="insttSeCd_2"><span style="font-size:14px">첨부목록</span></label>
+											<input type="radio" id="insttSeCd_3" name="insttSeCd" value="C"/><label for="insttSeCd_3"><span style="font-size:14px">내용</span></label>
+										</span>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="info_list" id="insttDiv_T">
+					<ul>
+						<li>
+							<p  class="center" style="text-align:center;">검색 버튼을 클릭하세요.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="info_list" id="insttDiv_F">
+					<ul>
+					</ul>
+				</div>
+				<div class="info_list" id="insttDiv_C">
+					<ul>
+					</ul>
+				</div>
+			</div>
+			<div class="alrt_area_center">
+				<span class="top_tx">※ hwpx 등 개방형 문서는 PDF변환 또는 뷰어미리보기가 제공되지 않습니다.</span>
+			</div>
+			<div class="btn_area_center">
+				<span class="left">
+					<a href="#" class="btn_type02 mar10" id="saveApInfoBtn">정보찜하기</a>
+					<a href="javascript:goRetInfoFn();" class="btn_type02" id="retInfoBtn" >연관정보 보기</a>
+				</span>
+				<span class="right">
+					<a href="javascript:void(0)" class="btn_type02" id="billingBtn"  onclick="goBillingFn()">청구</a>
+					<a href="javascript:void(0)" class="btn_type03" id="listBtn">목록</a>
+				</span>
+			</div>
+			<div class="viewer_area">
+				<h4>뷰어다운로드</h4>
+				<span class="top_tx">·<a href="/useInfo/userDwln.do" class="blue_text">뷰어다운로드</a> 메뉴에서 다양한 뷰어다운로드가 가능합니다.</span>
+				<div class="viewer_list">
+					<span class="ico_hwp"><a href="https://www.hancom.com/support/downloadCenter/download" id="type1" title="새창으로 한글(HWPX)으로 이동합니다.">한글(HWPX)</a></span>
+					<span class="ico_pdf"><a href="https://get.adobe.com/kr/reader/otherversions/" id="type3" title="새창으로 PDF(PDF)으로 이동합니다.">PDF(PDF)</a></span>
+					<span class="ico_ppt"><a href="/plugin/PowerPointViewer.zip" id="type5" title="파워포인트(PPTX) 뷰어 설치파일을 다운로드합니다.">파워포인트(PPTX)</a></span>
+					<span class="ico_word"><a href="/plugin/wordview_ko-kr.zip" id="type4" title="MS워드(DOCX) 뷰어 설치파일을 다운로드합니다.">MS워드(DOCX)</a></span>
+					<span class="ico_excel"><a href="/plugin/ExcelViewer.zip" id="type2" title="액셀(XLSX)뷰어 설치파일을 다운로드합니다.">액셀(XLSX)</a></span>
+				</div>
+			</div>
+			
+		</form>
+	
+	<link rel="stylesheet" type="text/css" href="/common/css/chart.css?date=2021">	
+	<script type="text/javaScript" language="javascript" >
+	
+		//<![CDATA[
+		
+		var originDtlVO;
+		var selFileId;
+		var selOrglPrdnNstCd;
+		var orgFileName;
+		
+		var gViewerType;	//VIEWER ADD 2020-09-07
+		var docType;		//VIEWER(본문) ADD 2021-03-15
+		var beforeStartDt='';	//연관정보 이전 조회 날짜. 중복 클릭 방지용
+		var beforeEndDt=''; 	//연관정보 이전 조회 날짜. 중복 클릭 방지용
+
+		
+		$(document).ready(function() {
+			var isTrue;
+			function isEmpty(result){
+				
+				return Object.keys(result).length === 0 && result.constructor === Object;
+			}
+		
+			isTrue =isEmpty(result)
+			
+			if(isTrue == false){
+				
+				initFunction();
+			}
+
+			//$("#title").html(result.title+" 상세");
+			//$("#title2").html(result.title+" 목록");
+			
+			// 정보목록 >> 청구, 목록
+			// 원문정보 상세 >> 찜하기, 청구(부분공개), 목록, 뷰어 , 파일팝업, 연관
+			// 장관목록 상세 >> 찜하기, 청구(부분공개), 목록, 뷰어 , 파일팝업, 연관
+			if(result.title == "정보목록"){
+				$("#retInfo").hide();
+			} else {
+				//키워드가 있으면 연관문서 조회하고 없으면 연관문서 숨김처리
+				if(null != result.parameterVO.kwd && result.parameterVO.kwd != ""){
+					// 연관문서 보여주는 함수 제거필요?
+					//searchFn();	
+				} else {
+				//	$("#retInfo").hide();
+				}
+			}
+			
+// 			if(result.isLogin != 'Y'){
+// 				$("#saveApInfoBtn").hide();
+// 			}			
+			
+			// 이벤트 만들기
+			initEvent();
+			//키워드가 있으면 조회로 변경
+			//searchFn();
+
+		});
+		
+		
+		initFunction = function() {
+		
+			fileAppend();
+			
+			if(result.parameterVO != null){
+				$("#prevUrl").val(result.parameterVO.prevUrl);
+				$("#kwd").val(result.parameterVO.kwd);
+				$("#pageStartDate").val(result.parameterVO.startDate);
+				$("#pageEndDate").val(result.parameterVO.endDate);
+				$("#searchInsttCd").val(result.parameterVO.insttCd);
+				$("#searchInsttCdNm").val(result.parameterVO.insttCdNm);
+				$("#pageInsttSeCd").val(result.parameterVO.insttSeCd);
+				$("#topictype").val(result.parameterVO.topictype);
+				$("#pageEduYn").val(result.parameterVO.eduYn);
+				if(result.openCateSearchVO && result.openCateSearchVO.nstSeCd) {
+					$("#nstSeCd").val(result.openCateSearchVO.nstSeCd);
+				}
+			}
+			
+			if(result.openCateSearchVO == null ) return ;
+			
+			// 테이블 화면에 값찍기
+	    	util_dataInputTd(result.openCateSearchVO);
+			originDtlVO = result.openCateSearchVO;
+			
+			// 공개이면서 파일목록이 있고 최근 일주일 이전 문서가 아닌경우
+			// 청구버튼 숨김
+			//[result.downloadRestriction != "Y" && 	// 최근 일주일 이전 문서가 아니고] 조건 삭제 
+			if(result.openCateSearchVO.fileYn == "Y" &&  // 파일 목록이 있고
+				result.openCateSearchVO.oppSeCd == "1" &&  // 공개이면서
+				result.downloadRestriction != "X" &&	// 생산문서가 원문서비스 대상이 아닐 경우 (이전 생산문서는 원문서비스 대상이 아닙니다)
+				result.openCateSearchVO.urtxtYn != 'N'  //국장급 이상만 다운로드 대상
+														) {
+				$("#billingBtn").hide();
+			}
+			
+			var nPrdnDt = parseInt(new String(result.openCateSearchVO.prdnDt).substr(0, 8));
+			
+			//[result.downloadRestriction != "Y" && 	// 최근 일주일 이전 문서가 아니고] 조건 삭제
+			if(result.openCateSearchVO.fileYn == "N" &&  // 파일 목록이 있고
+					result.openCateSearchVO.oppSeCd == "1" &&  // 공개이면서
+					result.openCateSearchVO.urtxtYn != 'N'  //국장급 이상만 다운로드 대상
+						){
+							if(result.openCateSearchVO.nstCd == "6110000"			// 서울특별시
+								|| result.openCateSearchVO.nstCd == "3010000" 		// 중구
+								|| result.openCateSearchVO.nstCd == "3030000" 		// 성동구
+								|| result.openCateSearchVO.nstCd == "3070000" 		// 성북구
+								|| result.openCateSearchVO.nstCd == "3120000" 		// 서대문구
+								|| result.openCateSearchVO.nstCd == "3220000"       // 강남구
+								|| (result.openCateSearchVO.nstCd == "3040000" && nPrdnDt >= 20151001 )	// 광진구
+								|| (result.openCateSearchVO.nstCd == "3080000" && nPrdnDt >= 20151101 )	// 강북구
+								|| (result.openCateSearchVO.nstCd == "3190000" && nPrdnDt >= 20150601 ) // 동작구
+								|| (result.openCateSearchVO.nstCd == "1721301" && nPrdnDt >= 20200101 )	// 우정사업본부
+								|| (result.openCateSearchVO.nstCd == "3200000" && nPrdnDt >= 20220923 ) // 관악구
+								|| (result.openCateSearchVO.nstCd == "3240000" && nPrdnDt >= 20221128 ) // 강동구
+								|| (result.openCateSearchVO.nstCd == "3000000" && nPrdnDt >= 20230116 ) // 종로구
+								|| (result.openCateSearchVO.nstCd == "3210000" && nPrdnDt >= 20230113 ) // 서초구
+								|| (result.openCateSearchVO.nstCd == "3060000" && nPrdnDt >= 20230731 ) // 중랑구
+								|| (result.openCateSearchVO.nstCd == "3020000" && nPrdnDt >= 20230918 ) // 용산구
+								|| (result.openCateSearchVO.nstCd == "3050000" && nPrdnDt >= 20231106 ) // 동대문구
+							){	
+						
+								if(result.openCateSearchVO.oppUrl!=null || result.openCateSearchVO.oppUrl != "" ) {
+									$("#billingBtn").hide();
+								}
+							}
+			}
+			
+			$(".info_list").hide();
+		};
+
+	/*******************************************************
+	* 이벤트 초기화
+	********************************************************/
+	initEvent = function() {
+		
+		// 뷰어다운르드 버튼
+		$("#viewerDownBtn").bind("click", function(){
+			
+			$("#viewerDownDiv").toggle();
+			
+		});
+		
+		// 한글
+		/*
+		$("#type1").bind("click", function(){
+			
+			var url   = "https://www.hancom.com/support/downloadCenter/download";
+			var option = new Object();
+				option.type   = "blank";
+	
+			var param = new Object();
+				
+				util_modalPage(url, option, param);
+			
+		});
+		
+		// PDF
+		$("#type3").bind("click", function(){
+			
+			var url   = "https://adobe.com/kr/acrobat/pdf-reader.html";
+			var option = new Object();
+				option.type   = "blank";
+	
+			var param = new Object();
+				
+				util_modalPage(url, option, param);
+			
+		});
+		*/
+		
+//		// 엑셀
+//		$("#type2").bind("click", function(){
+//			
+//			var url   = "http://www.microsoft.com/ko-kr/download/details.aspx?id=10";
+//			var option = new Object();
+//				option.type   = "blank";
+//	
+//			var param = new Object();
+//				
+//			util_modalPage(url, option, param);
+//			
+//		});
+//		
+//		// MS워드
+//		$("#type4").bind("click", function(){
+//			
+//			var url   = "http://www.microsoft.com/ko-kr/download/details.aspx?id=4";
+//			var option = new Object();
+//				option.type   = "blank";
+//	
+//			var param = new Object();
+//				
+//				util_modalPage(url, option, param);
+//			
+//		});
+//		
+//		// 파워 포인트
+//		$("#type5").bind("click", function(){
+//			
+//			var url   = "http://www.microsoft.com/ko-kr/download/details.aspx?id=13";
+//			var option = new Object();
+//				option.type   = "blank";
+//	
+//			var param = new Object();
+//				
+//				util_modalPage(url, option, param);
+//			
+//		});
+		
+		// 찜하기
+		$("#saveApInfoBtn").bind("click", function(){
+			if(result.isLogin == 'Y'){
+				if(confirm("선택하신 정보를 찜하기 목록에 담으시겠습니까?")){
+					insertFn();
+				}
+			}else{
+				// 로그인화면으로 이동
+				alert("로그인이 필요합니다.");
+				var url = "/com/login/memberLogin.do";
+				var param = new Object();
+				
+				util_movePage(url, param);
+			}
+			
+		});
+		
+		// 목록
+		$("#listBtn").bind("click", function(){
+			
+			var url   = "";
+			var title = result.title;
+			
+			// 보안 이슈로 인한 작업 변경
+			var prevUrl = result.parameterVO.prevUrl; 
+			// var prevUrl = $("#prevUrl").val(); 
+			
+			var param = new Object();
+			
+			//정책실명제에서 넘어올때 사용함.
+			param.rgstYmd				= result.parameterVO.rgstYmd;	
+			
+			param.kwd 					= $("#kwd").val();
+			
+			// 통합검색을 통해 원문정보 상세로 갔다가 목록으로 돌아가면 pageStartDate이 2018년으로 세팅됨
+			var endDate   = $("#pageEndDate").val();
+			var startDate = $("#pageStartDate").val();
+			var yearAgo = new Date(toDate(endDate).setDate(toDate(endDate).getDate()-365));
+			
+			if(toDate(startDate) > yearAgo){
+				param.startDate			= $("#pageStartDate").val();
+			} else {
+				param.startDate 		= toString(yearAgo);
+			}
+			
+		
+			param.endDate 				= $("#pageEndDate").val();
+			param.insttCd 				= $("#searchInsttCd").val();
+			param.insttCdNm 			= $("#searchInsttCdNm").val();
+			param.insttSeCd 			= $("#pageInsttSeCd").val();
+			param.topictype 			= $("#topictype").val();			
+			param.eduYn 				= $("#pageEduYn").val();	
+			param.searchMainYn 			= result.parameterVO.searchMainYn;	
+			param.searchCurrTab 		= result.parameterVO.searchCurrTab;	
+			
+			//상세검색 관련
+			param.srchFd  				= result.parameterVO.srchFd;
+			param.reSrchFlag  			= result.parameterVO.reSrchFlag == true ? "on" : "off";
+	   		param.ignoreKeyword  		= result.parameterVO.ignoreKeyword;
+	   		param.mustKeyword  			= result.parameterVO.mustKeyword;
+            param.pSelt 				= result.parameterVO.PSelt;
+	   		
+			//결과내 재검색 널값 제외 처리
+			param.preKwds 				= util_preKwds(result.parameterVO.preKwds);
+	   		
+			//주제별의 건수
+			param.total					= result.parameterVO.total;
+			param.typeValue				= result.parameterVO.typeValue;
+			param.fields		   		= result.parameterVO.fields;
+			
+			//목록의 페이징 처리
+			param.viewPage 				= result.parameterVO.viewPage
+			param.rowPage  				= result.parameterVO.rowPage;
+			param.sort  				= result.parameterVO.sort;
+			
+			//infoList.AJAX -> 페이징 : 공개여부 보내기
+  			param.othbcSeCd				= result.parameterVO.othbcSeCd;
+			
+			// 해킹툴로 url조작 불가 기능
+			if ("" != prevUrl && (prevUrl.indexOf('http') > -1 || prevUrl.indexOf('www') > -1)){
+				history.back();
+				return false;
+			}	
+			
+			if( "" != prevUrl){
+				url = prevUrl; 
+			}else  if(title == "원문정보"){
+				url = "/othicInfo/infoList/orginlInfoList.do";
+			}else if(title == "기관장결재문서"){
+				url = "/othicInfo/infoList/mnstrSanDocList.do";
+			}else if(title == "정책실명제"){
+				url = "/othicInfo/plcyChgrRealNm/polRnInsttList.do";
+			}else{
+				url = "/othicInfo/infoList/infoList.do";
+			}
+
+			util_movePage(url, param);
+		});
+		
+		function toDate(date){
+		    var year  = date.substr(0,4),
+		        month = date.substr(4,2)-1,
+		        day   = date.substr(6,2);
+		    return new Date(year, month ,day);
+		}
+		
+		function toString(str){
+			var year  = str.getFullYear().toString();
+			var month = (str.getMonth()+1).toString();
+			var day   = str.getDate().toString();
+			
+			(day.length == 1) && (day = '0' + day);
+			(month.length ==1) && (month = '0' + month);
+			
+			var dateStr = year + month + day;
+			return dateStr;
+		}
+		
+		$("input[type=radio][name=insttSeCd]").on('change', function() {
+			//alert($("input[type=radio][name=insttSeCd]:checked").val());
+			
+			var insttSeCd = $("input[type=radio][name=insttSeCd]:checked").val();
+			
+			$(".info_list").hide();
+			
+			$(".info_list#insttDiv_" + insttSeCd).show();
+		});
+		
+		
+		$("#searchBtn").on('click', function() {
+			searchRetInfoFn();
+		});
+
+		// 이전 다음 버튼 이벤트
+		$(document).on('click', '.prevNextBtn',function() {
+			prevNextPageMove($(this).attr('id'));
+		});
+		
+		initPrevNextBtn();
+	};
+	
+	prevNextPageMove = function(btnId){
+		let bResult = ('prevBtn' == btnId) ? true : false,
+			$btn = (bResult) ? $('#prevBtn') : $('#nextBtn'),
+			data = $btn.data('detl'),
+			offSet = 0;
+		
+		if (bResult){
+			// 이전 버튼인 경우 
+			offSet = result.parameterVO.offSet - 1;
+			
+			if (0 > offSet && 1 < result.parameterVO.viewPage ){
+				result.parameterVO.viewPage = result.parameterVO.viewPage - 1;
+				offSet = result.parameterVO.rowPage - 1;
+			} else if (0 > offSet){
+				offSet = 0;
+			}
+			
+		} else {
+			if (result.parameterVO.offSet == (result.parameterVO.rowPage - 1)){
+				offSet = 0;
+				result.parameterVO.viewPage = result.parameterVO.viewPage + 1;
+			} else {
+				offSet = result.parameterVO.offSet + 1;
+			}
+		}
+		
+		if (!isEmpty(data)){
+			
+			
+			goPrevNextDetail(data.PRDCTN_INSTT_REGIST_NO, data.PRDCTN_DT, data.INSTT_SE_CD, offSet); 
+		}
+	}
+
+	// 이전 다음 버튼 생성
+	initPrevNextBtn = function(){
+
+		if(!isEmpty(result.prevnextVO) && 0 < result.prevnextVO.rows){
+
+			let index = result.prevnextVO.result.map(function(list) {return list.PRDCTN_INSTT_REGIST_NO;}).indexOf(result.prdnNstRgstNo),
+				rows = result.prevnextVO.rows,
+				prevBtn = '<a href="javascript:void(0)" class="btn_type02 prevNextBtn" id="prevBtn">이전</a>',
+				nextBtn = '<a href="javascript:void(0)" class="btn_type02 prevNextBtn" id="nextBtn">다음</a>',
+				$listBtn = $('#listBtn');
+
+			
+			//  리스트 3개이고 현재 글을 가운데 있는 no 이전, 다음 버튼을 생성
+			if(3 <= rows && 1 == index){
+				$listBtn.parent().prepend(prevBtn + nextBtn);
+				$('#prevBtn').data('detl', result.prevnextVO.result[0]);
+				$('#nextBtn').data('detl', result.prevnextVO.result[2]);
+			} else if (3<= rows && 0 == index){
+				// 다음 버튼만 존재
+				$listBtn.parent().prepend(nextBtn);
+				$('#nextBtn').data('detl', result.prevnextVO.result[1]);
+			} else if (1 == index){
+				//  이전 버튼만 존재
+				$listBtn.parent().prepend(prevBtn);
+				$('#prevBtn').data('detl', result.prevnextVO.result[0]);
+			} 
+		}
+	}
+
+	/*******************************************************
+	* 이벤트 함수
+	********************************************************/
+	/**
+	 * 첨부파일
+	 */
+	fileAppend = function(){
+		
+		$("#oppLink").hide();
+		
+		$('.alrt_area_center').hide();
+		
+		//var DS_LEVEL = rtnVO.DS_LEVEL;
+		var downloadRestriction = result.downloadRestriction;
+			
+			var str  = "";
+			str += "<tr>";
+			str += "<th scope=\"row\"><strong>본문파일</strong></th>";
+			str += "<td colspan=\"3\">";
+			
+			//AS_IS 사용안함
+			if( result.openCateSearchVO == null ){ // 원문공개대상기관 X
+				
+				str += "<p>요청하신 문서정보가 존재하지 않습니다.</p>";
+				
+			} else if ( result.openCateSearchVO.checkCount == "0" ) {
+				
+				str += "<p>본 문서는 원문서비스 대상이 아닙니다.<br />필요 시 청구신청 하시기 바랍니다.</p>";
+				
+			} else { // 원문공개대상기관
+
+				
+				var nPrdnDt = parseInt(new String(result.openCateSearchVO.prdnDt).substr(0, 8));
+				
+				if(result.openCateSearchVO.nstCd == "6110000"			// 서울특별시
+					|| result.openCateSearchVO.nstCd == "3010000" 		// 중구
+					|| result.openCateSearchVO.nstCd == "3030000" 		// 성동구
+					|| result.openCateSearchVO.nstCd == "3070000" 		// 성북구
+					|| result.openCateSearchVO.nstCd == "3120000" 		// 서대문구
+					|| result.openCateSearchVO.nstCd == "3220000"	// 강남구
+					|| (result.openCateSearchVO.nstCd == "3040000" && nPrdnDt >= 20151001 )	// 광진구
+					|| (result.openCateSearchVO.nstCd == "3080000" && nPrdnDt >= 20151101 )	// 강북구
+					|| (result.openCateSearchVO.nstCd == "3190000" && nPrdnDt >= 20150601 )	// 동작구
+					|| (result.openCateSearchVO.nstCd == "1721301" && nPrdnDt >= 20200101 )	// 우정사업본부
+					|| (result.openCateSearchVO.nstCd == "3200000" && nPrdnDt >= 20220923 ) // 관악구
+					|| (result.openCateSearchVO.nstCd == "3240000" && nPrdnDt >= 20221128 ) // 강동구
+					|| (result.openCateSearchVO.nstCd == "3000000" && nPrdnDt >= 20230116 ) // 종로구
+					|| (result.openCateSearchVO.nstCd == "3210000" && nPrdnDt >= 20230313 ) // 서초구
+					|| (result.openCateSearchVO.nstCd == "3060000" && nPrdnDt >= 20230731 ) // 중랑구
+					|| (result.openCateSearchVO.nstCd == "3020000" && nPrdnDt >= 20230918 ) // 용산구
+					|| (result.openCateSearchVO.nstCd == "3050000" && nPrdnDt >= 20231106 ) // 동대문구
+				){	
+	
+					//정보 공개 링크 URL
+					var oppUrl = result.openCateSearchVO.oppUrl; 
+					
+					if(oppUrl != "" && oppUrl!=null && result.openCateSearchVO.urtxtYn == 'Y' && result.openCateSearchVO.oppSeCd != '3') {
+					
+						$("#oppLink").show();
+						
+						if( oppUrl.indexOf("http://") == -1 && oppUrl.indexOf("https://") == -1 ){
+						
+							oppUrl = "http://"+oppUrl;
+						}
+						$("#oppUrlTxt").html("<p><a href=\"javascript:openLinkUrl('"+oppUrl+"');\">"+oppUrl+"</a></p>");
+						
+						var strLinkNm = "";
+						//다운로드링크
+						if(result.openCateSearchVO.nstCd != "1721301"){
+							strLinkNm = "다운로드링크<br>(서울시)";
+						} else {
+							strLinkNm = "다운로드링크<br>(우정사업본부)";
+						}
+						$("#downLinkNm").html(strLinkNm);
+					} else if(result.openCateSearchVO.oppSeCd == "3"){ // 비공개
+						
+						str += "<p>본 문서는 비공개 문서이므로 열람이 불가능 합니다. 필요 시 청구신청 하시기 바랍니다.</p>";
+						
+					}else if(result.openCateSearchVO.urtxtYn == 'N'){ //국장급 이상만 다운로드 대상
+						
+						str += "<p>결재문서의 원문공개 대상(국장급,부단체장 등 이상)이 아닙니다.<br/>필요 시 정보공개 청구신청 하시기 바랍니다.</p>";
+						
+					}
+					
+				} else if(result.openCateSearchVO.oppSeCd == "3"){ // 비공개
+				
+					str += "<p>본 문서는 비공개 문서이므로 열람이 불가능 합니다. 필요 시 청구신청 하시기 바랍니다.</p>";
+					
+				} else if (result.openCateSearchVO.oppSeCd == "5"){ // 열람제한
+					
+					str += "<p>본 문서는 "+ util_datestr(result.openCateSearchVO.dtaRedgLmttEndYmd, '.') +"까지 열람이 제한되어 있습니다. 열람제한일 이후에 열람하시기 바랍니다.</p>";
+					
+				} else if(result.openCateSearchVO.urtxtYn == 'N'){ //국장급 이상만 다운로드 대상
+					
+					str += "<p>결재문서의 원문공개 대상(국장급,부단체장 등 이상)이 아닙니다.<br/>필요 시 정보공개 청구신청 하시기 바랍니다.</p>";
+					
+				} else if( downloadRestriction == "X" ){ 
+					
+					str += "<p>"+result.openDate+" 이전 생산문서는 원문서비스 대상이 아닙니다.<br/>필요 시 정보공개 청구신청 하시기 바랍니다.</p>";
+					
+				//openDate 까지 다운로드 제한
+//				} else if( downloadRestriction == "Y" ){ 
+//					if(result.openDate != null && result.openDate!=""){
+//						//str += "<p>\n\r본 문서는 "+result.openDate+" 부터 열람이 가능 합니다.<br/>열람일시 이전에 필요시 정보공개 청구신청 하시기 바랍니다.<\p>";
+//						str += "<p>\n\r본 문서는 "+result.openDate+" 부터 열람이 가능 합니다.<br/>필요시 정보공개 청구신청 하시기 바랍니다.<\p>";
+//					}
+				} else if(result.openCateSearchVO.fileYn == "Y"){
+					
+					var str  = "";
+					
+					$.each(result.openCateSearchVO.fileList, function(index, data){
+						
+						var imageStr = getImage(data.fileNm);
+						
+						var fileSeDc = data.fileSeDc == "본문" ? "본문" : "붙임";
+						
+						str += "<tr>";
+						str += "<th id=\""+fileSeDc+'_'+index+"\" scope=\"row\"><strong>"+fileSeDc+"파일</strong></th>";
+						str += "<td headers=\""+fileSeDc+'_'+index+"\" colspan=\"3\">";
+						
+						var fileNm = data.fileNm.replace(/&apos;/g,"").replace(/'/g,"");
+						
+						//첨부파일 시작
+						str += "<p>";
+						if(data.fileByteNum==""){
+							//str += "<a href=\"javascript:void(0)\" class=\"point_gr\">"+ data.fileNm +"</a>"; 
+							str += "<a class=\"point_gr point_grobs\">"+ data.fileNm +"</a>";
+						}else{
+							//str += "<a href=\"javascript:void(0)\" class=\"point_gr\">"+ data.fileNm +"<span>("+((data.fileByteNum/1024)/1024 > 1 ? (((data.fileByteNum/1024)/1024)).toFixed(1) +" MB" : ((data.fileByteNum/1024)).toFixed(1)+" KB")+")</span></a>";	
+							str += "<a class=\"point_gr point_grobs\">"+ data.fileNm +"<span>("+((data.fileByteNum/1024)/1024 > 1 ? (((data.fileByteNum/1024)/1024)).toFixed(1) +" MB" : ((data.fileByteNum/1024)).toFixed(1)+" KB")+")</span></a>";
+						}
+						
+						str += "<span>";
+						if(result.openCateSearchVO.oppSeCd == "1"){ // 공개						
+								if(fileSeDc != "본문"){
+								    
+								 	// 2026.09.18.
+								    if(result.openCateSearchVO.nstSeCd!="E"){
+
+    									//str += "<a class=\"btn_type05 down\" href=\"javascript:void(0)\" onclick=\"javascript:wonmunStep1('"+ data.fileId + "', '" + data.fileNm.replace(/'/g,"`").split("\"").join("") + "', 'N','" + index + "')\">" + imageStr.fileExtKo + "다운로드</a> ";
+    									str += "<a class=\"btn_type05 down\" href=\"javascript:void(0)\" onclick=\"javascript:wonmunStep1('"+ data.fileId + "', '" + fileNm.split("\"").join("") + "', 'N','" + index + "')\">" + imageStr.fileExtKo + "다운로드</a> ";
+    
+    									// pdf 확인
+    									if(isPdfFn(data.fileNm)){
+    										str += "<a class=\"btn_type05 down\" href=\"javascript:void(0)\" onclick=\"javascript:wonmunStep1('"+ data.fileId + "', '" +fileNm.split("\"").join("") + "', 'Y')\">PDF 변환</a>";
+    									}
+    									
+    									if(isConvertYn(data.fileNm)){
+    										// 문서파일일 경우에만 표시
+    										str += " <a class=\"btn_type05 view\" href=\"javascript:void(0)\" onclick=\"javascript:synapViewer('"+ data.fileId + "', '" +fileNm.split("\"").join("") + "', 'N')\" title=\"새창\">뷰어바로보기</a>";										
+    									}
+								    }
+							
+								}else{
+									// pdf 확인
+									if(isPdfFn(data.fileNm)){
+										str += "<a class=\"btn_type05 down\" href=\"javascript:void(0)\" onclick=\"javascript:wonmunStep1('"+ data.fileId + "', '" + fileNm.split("\"").join("") + "', 'Y')\">PDF 변환</a>";
+									}else{
+										str += "<a class=\"btn_type05 down\" href=\"javascript:void(0)\" onclick=\"javascript:wonmunStep1('"+ data.fileId + "', '" + fileNm.split("\"").join("") + "', 'N')\">" + imageStr.fileExtKo + "다운로드</a>";
+									}
+
+									if(isConvertYn(data.fileNm)){
+										//str += " <a class=\"btn_type05 view\" href=\"javascript:void(0)\" onclick=\"javascript:synapViewer('"+ data.fileId + "', '" + data.fileNm.replace(/'/g,"`").split("\"").join("") + "', 'Y')\">뷰어바로보기</a>";
+										//str += " <a class=\"btn_type05 view\" href=\"javascript:void(0)\" onclick=\"javascript:synapBMViewer('"+ data.fileId + "', '" + data.fileNm.replace(/'/g,"`").split("\"").join("") + "', 'Y')\">뷰어바로보기</a>";
+										if(!isPdfFn(data.fileNm)){
+											str += " <a class=\"btn_type05 view\" href=\"javascript:void(0)\" onclick=\"javascript:synapViewer('"+ data.fileId + "', '" + fileNm.replace(/&apos;/g," ").split("\"").join("") + "', 'N')\" title=\"새창\">뷰어바로보기</a>";
+										} else {
+											str += " <a class=\"btn_type05 view\" href=\"javascript:void(0)\" onclick=\"javascript:synapBMViewer('"+ data.fileId + "', '" + fileNm.replace(/&apos;/g," ").split("\"").join("") + "', 'Y')\" title=\"새창\">뷰어바로보기</a>";
+										}
+									}
+								}
+	//						}
+						}else if(result.openCateSearchVO.oppSeCd == "2"){ // 부분공개
+							
+							if(data.fileOppYn == "Y"){
+								
+								if(fileSeDc != "본문"){
+									
+								 	// 2026.09.18.
+								    if(result.openCateSearchVO.nstSeCd!="E"){
+    									// 예외기관 확인 2021-05-12 황선우
+    									
+    									str += "<a class=\"btn_type05 down\" href=\"javascript:void(0)\" onclick=\"javascript:wonmunStep1('"+ data.fileId + "', '" + fileNm.split("\"").join("") + "', 'N','" + index + "')\">" + imageStr.fileExtKo + "다운로드</a> ";
+    
+    									// pdf 확인
+    									if(isPdfFn(data.fileNm)){
+    										str += "<a class=\"btn_type05 down\" href=\"javascript:void(0)\" onclick=\"javascript:wonmunStep1('"+ data.fileId + "', '" + fileNm.split("\"").join("") + "', 'Y')\">PDF 변환</a>";
+    									}
+    									
+    									if(isConvertYn(data.fileNm)){
+    										// 문서파일일 경우에만 표시
+    										str += " <a class=\"btn_type05 view\" href=\"javascript:void(0)\" onclick=\"javascript:synapViewer('"+ data.fileId + "', '" + fileNm.split("\"").join("") + "', 'N')\" title=\"새창\">뷰어바로보기</a>";										
+    									}
+								    }
+									
+									/*
+									if(result.openCateSearchVO.nstSeCd == "C"			// 중앙
+									|| result.openCateSearchVO.nstSeCd == "W" 		// 시도
+									|| result.openCateSearchVO.nstSeCd == "B"		// 지자체
+										) {
+										
+									} else {
+										//str += "<p>";
+										//str += "<a class=\"point_gr\" href=\"javascript:void(0)\" onclick=\"wonmunStep1('"+ data.fileId + "', '" + data.fileNm.replace(/'/g,"`").split("\"").join("") + "', 'N')\"><img class=\"ico_type\" alt=\"" + imageStr.fileExtKo + "\" src=\"/images/pa/common/ico_" + imageStr.fileExt + ".gif\"/>다운로드</a>";
+										
+										str += "<a class=\"btn_type05 down\" href=\"javascript:void(0)\" onclick=\"javascript:wonmunStep1('"+ data.fileId + "', '" + data.fileNm.replace(/'/g,"`").split("\"").join("") + "', 'N')\">" + imageStr.fileExtKo + "다운로드</a>";
+										
+										// pdf 확인
+										if(isPdfFn(data.fileNm)){
+											str += "<a class=\"btn_type05 down\" href=\"javascript:void(0)\" onclick=\"javascript:wonmunStep1('"+ data.fileId + "', '" + data.fileNm.replace(/'/g,"`").split("\"").join("") + "', 'Y')\">PDF 변환</a>";
+										}
+										
+										if(isConvertYn(data.fileNm)){
+											str += " <a class=\"btn_type05 view\" href=\"javascript:void(0)\" onclick=\"javascript:synapViewer('"+ data.fileId + "', '" + data.fileNm.replace(/'/g,"`").split("\"").join("") + "', 'N')\">뷰어바로보기</a>";										
+										}
+									}
+									*/
+									//str += "</p>";
+								}else{
+
+									// pdf 확인
+									if(isPdfFn(data.fileNm)){
+										
+										str += "<a class=\"btn_type05 down\" href=\"javascript:void(0)\" onclick=\"javascript:wonmunStep1('"+ data.fileId + "', '" + fileNm.split("\"").join("") + "', 'Y')\">PDF 변환</a>";
+									
+									}else{
+										
+										str += "<a class=\"btn_type05 down\" href=\"javascript:void(0)\" onclick=\"javascript:wonmunStep1('"+ data.fileId + "', '" + fileNm.split("\"").join("") + "', 'N')\">" + imageStr.fileExtKo + "다운로드</a>";
+
+									}
+
+									if(isConvertYn(data.fileNm)){
+										//str += " <a class=\"btn_type05 view\" href=\"javascript:void(0)\" onclick=\"javascript:synapViewer('"+ data.fileId + "', '" + data.fileNm.replace(/'/g,"`").split("\"").join("") + "', 'Y')\">뷰어바로보기</a>";
+										//str += " <a class=\"btn_type05 view\" href=\"javascript:void(0)\" onclick=\"javascript:synapBMViewer('"+ data.fileId + "', '" + data.fileNm.replace(/'/g,"`").split("\"").join("") + "', 'Y')\">뷰어바로보기</a>";
+										if(!isPdfFn(data.fileNm)){
+											str += " <a class=\"btn_type05 view\" href=\"javascript:void(0)\" onclick=\"javascript:synapViewer('"+ data.fileId + "', '" + fileNm.split("\"").join("") + "', 'N')\" title=\"새창\">뷰어바로보기</a>";
+										} else {
+											str += " <a class=\"btn_type05 view\" href=\"javascript:void(0)\" onclick=\"javascript:synapBMViewer('"+ data.fileId + "', '" + fileNm.split("\"").join("") + "', 'Y')\" title=\"새창\">뷰어바로보기</a>";
+										}
+									}
+									
+									
+								}
+							}else{ // 본문파일은 fileOppYn 상관없이 다 보여줌
+								
+								if(fileSeDc == "본문"){
+									
+									// pdf 확인
+									if(isPdfFn(data.fileNm)){
+										
+										str += "<a class=\"btn_type05 down\" href=\"javascript:void(0)\" onclick=\"javascript:wonmunStep1('"+ data.fileId + "', '" + fileNm.split("\"").join("") + "', 'Y')\">PDF 변환</a>";
+									
+									}else{
+									
+										str += "<a class=\"btn_type05 down\" href=\"javascript:void(0)\" onclick=\"javascript:wonmunStep1('"+ data.fileId + "', '" + fileNm.split("\"").join("") + "', 'N')\">" + imageStr.fileExtKo + "다운로드</a>";
+										
+									}				
+									
+									if(isConvertYn(data.fileNm)){
+										//str += " <a class=\"btn_type05 view\" href=\"javascript:void(0)\" onclick=\"javascript:synapViewer('"+ data.fileId + "', '" + data.fileNm.replace(/'/g,"`").split("\"").join("") + "', 'Y')\">뷰어바로보기</a>";
+										//str += " <a class=\"btn_type05 view\" href=\"javascript:void(0)\" onclick=\"javascript:synapBMViewer('"+ data.fileId + "', '" + data.fileNm.replace(/'/g,"`").split("\"").join("") + "', 'Y')\">뷰어바로보기</a>";
+										if(!isPdfFn(data.fileNm)){
+											str += " <a class=\"btn_type05 view\" href=\"javascript:void(0)\" onclick=\"javascript:synapViewer('"+ data.fileId + "', '" + fileNm.split("\"").join("") + "', 'N')\" title=\"새창\">뷰어바로보기</a>";
+										} else {
+											str += " <a class=\"btn_type05 view\" href=\"javascript:void(0)\" onclick=\"javascript:synapBMViewer('"+ data.fileId + "', '" + fileNm.split("\"").join("") + "', 'Y')\" title=\"새창\">뷰어바로보기</a>";
+										}
+									}
+									
+								}
+							}
+						}
+						str += "</span>";
+						str += "</p>";
+					});
+				}
+			}
+	
+			str += "</td>";
+			str += "</tr>";
+			$(".gridTable").append(str);
+			
+			var hwpxChecks = [".hwpx",".HWPX", ".docx",".DOCX", ".pptx",".PPTX", ".xlsx", ".XLSX"];
+			
+			var hwpxExists = $(".point_grobs").filter(function () {
+				var chkText = $(this).text();
+				
+				return hwpxChecks.some(function(hwpxCheck){
+					return chkText.indexOf(hwpxCheck) > -1 ;
+				})
+			}).length > 0;
+			
+			if (hwpxExists) {
+				$(".alrt_area_center").show();
+			}
+			
+	};
+ 
+   	// 찜하기 저장
+     insertFn = function(){
+
+		    var url        = "/com/apinfo/apinfoReg.ajax";
+	   		var param       = new Object();
+	   		param.apinfoTyCd = '00002';
+	   		param.prdctnDt = originDtlVO.prdnDt;
+	   		param.prdctnInsttRegistNo = originDtlVO.prdnNstRgstNo;
+		    var callBackFn      = "insertFn_callBack";
+		    util_ajax(url, param, callBackFn);
+    	 };
+    	 
+    // 찜하기 저장 콜백 
+		insertFn_callBack = function(result){
+			if(result.result.error_code != "00"){
+				alert("이미 찜한 정보가 있습니다.");
+				return false;
+			}else{
+				alert(result.error_msg);
+			}
+		};
+	
+	/**
+	 * 청구/신청
+	 */
+	goBillingFn = function() {
+
+		if(isWillBeAblInsttCd(result.openCateSearchVO.nstCd)) {
+			if(result.openCateSearchVO.nstCd.indexOf('B552555')>-1) {
+				window.open("https://www.lh.or.kr/user/publicinfo/list.do");
+			} else {
+				alert(alertMsgWillBeAblInstt(result.openCateSearchVO.nstCd) + " 기관은 폐지예정기관으로 청구신청할 수 없습니다.");
+				return;
+			}
+		} else if(confirm("청구/신청 하시겠습니까?")) {
+			
+			var url   = "/rqestMlrd/rqestReg/rqestRegWritingForm.do";
+			// var option = new Object();          // 모달 옵션
+ 	        //     option.width  = "1400";          // 팝업넓이
+            //     option.height = "850";          // 팝업높이
+            //     option.title  = "청구신청";   // 모달 타이틀 명
+            //     option.type   = "window";
+			var param = new Object();
+				param.prdctnDt        			= result.openCateSearchVO.prdnDt;
+				param.prdctnInsttRegistNo 	= result.openCateSearchVO.prdnNstRgstNo;
+				param.rceptInsttCd				= result.openCateSearchVO.nstCd;
+				param.rqestInsttNm				= result.openCateSearchVO.prcsNstNm;
+				param.rqestSj						= result.openCateSearchVO.infoSj;
+				param.isPopUp					= 'true';
+
+				$("#nextForm").remove();
+				var makedForm = "";
+				makedForm += "<form id=\"nextForm\" name=\"nextForm\" method=\"post\" action=\"" + url + "\">";
+				if(typeof param != "undefined"){
+					makedForm += util_makeInputTag(param, "");
+				}
+				if (!isEmptyScui()){
+					makedForm += "<input type=\"hidden\" name=\"scui\" value=\"" + scui + "\" />";
+				}
+				makedForm += "</form>";
+				$("body").append(makedForm);
+				
+				var winPopUp = window.open("abount:blank", "winName",['fullscreen=no']);
+				var frm = document.getElementById('nextForm');
+				frm.target = "winName";
+				frm.submit();
+		}
+	};
+	
+	/**
+	 * 파일 확장자
+	 */
+	fileExt = function(fileName){
+		
+		var fileExt = fileName.substr(fileName.lastIndexOf(".") + 1);
+	
+		return fileExt;
+	};
+	
+	/**
+	 * pdf 변환여부
+	 */
+	isPdfFn = function(fileName){
+		
+		var rtnStr  = false;
+		var fileExt = fileName.substr(fileName.lastIndexOf("."));
+		if(prcsNstNm == "GUROGU"){
+			// var ext = [".hwpx", ".HWPX", ".hwx", ".hwp", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx", ".HWP", ".DOC", ".DOCX", ".XLS", ".PPT", ".PPTX"];
+			var ext = [ ".hwx", ".hwp", ".HWP"];
+		}else{
+			// var ext = [".hwpx", ".HWPX", ".hwp", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx", ".HWP", ".DOC", ".DOCX", ".XLS", ".PPT", ".PPTX"];
+			var ext = [".hwp", ".HWP"];
+		}
+		
+		for(var i = 0; i < ext.length; i++){
+			if(fileExt == ext[i]){
+				rtnStr = true;
+			}
+		}
+		
+		return rtnStr;
+	};
+	
+	/**
+	 * convertYn
+	 */
+	isConvertYn = function(fileName){
+		
+		var rtnStr  = false;
+		var fileExt = fileName.substr(fileName.lastIndexOf(".")).toLowerCase();
+
+		var ext = [".hwp", ".doc", ".docx", ".ppt", ".pptx", ".xls", ".xlsx", ".pdf", ".odt", ".txt", ".png", ".jpg", ".jpeg", ".gif", ".tif", ".tiff"];
+
+
+		for(var i = 0; i < ext.length; i++){
+			if(fileExt == ext[i]){
+				rtnStr = true;
+			}
+		}
+		
+		return rtnStr;
+	};
+	
+	/*
+	hwpxCheck = function(fileName){
+		
+		var fileExt = fileName.substr(fileName.lastIndexOf(".") + 1);
+	
+		return fileExt;
+	};*/
+	
+	/**
+	 * 이미지 명확인
+	 */
+	getImage = function(fileName){
+		
+		var rtnStr  = new Object();
+		var fileExt = fileName.substr(fileName.lastIndexOf(".") + 1).toLowerCase();
+		
+		if(fileExt == "hwp" ){
+			
+			rtnStr.fileExt   = "hwp";
+			rtnStr.fileExtKo = "한글";
+			
+		}else if(fileExt == "hwpx"){
+			
+			rtnStr.fileExt   = "hwpx";
+			rtnStr.fileExtKo = "한글";
+			
+		}else if(fileExt == "doc" || fileExt == "docx"){
+			
+			rtnStr.fileExt   = "docxx";
+			rtnStr.fileExtKo = "MS워드";
+			
+		}else if(fileExt == "xls" || fileExt == "xlsx"){
+			
+			rtnStr.fileExt   = "xlsx";
+			rtnStr.fileExtKo = "엑셀";
+			
+		}else if(fileExt == "ppt" || fileExt == "pptx"){
+			
+			rtnStr.fileExt   = "pptx";
+			rtnStr.fileExtKo = "파워포인트";
+			
+		}else if(fileExt == "pdf"){
+			
+			rtnStr.fileExt   = "pdf";
+			rtnStr.fileExtKo = "pdf";
+			
+		}else{
+			
+			rtnStr.fileExt   = "etc";
+			rtnStr.fileExtKo = "etc";
+			
+		}
+		
+		return rtnStr;
+	};
+	
+	checkName = function(fileName){
+		if((fileName.indexOf('..\\') != -1) || (fileName.indexOf('../') != -1)){
+			return false;
+		}
+		
+		var fName = fileName.substring(fileName.lastIndexOf('\\') +1);
+		
+		return fName;
+	};
+	
+	/**
+	 * 원문 파일 요청 
+	 */
+	wonmunStep1 = function(fileId, fileName, isPdf){
+		
+
+		if ($("#popup_wrap").is(':visible')){
+			return false;
+		}
+
+		getExt(fileName, isPdf)
+		if (tmpExt != null && tmpExt.toLowerCase() == "odt") {
+			alert("개방형문서 ODT파일은 기계판독용으로, 문서내용이 깨질 수 있으므로\n원본 붙임파일을 이용하시기 바랍니다.\n\n * ODT관련 문의\n - 행정안전부 정보공개정책과\n - 044-205-2262, 2265");
+		}
+		
+		if(isPdf == "Y"){
+			$("#popup_wrap").attr('style', "display:none; position:relative; left:230px; top:-50px; width:555px; background-color: white; ");
+			$("#step4").show();
+			
+			$("#popup_wrap").removeClass("chgClass");
+		}else{
+			$("#popup_wrap").attr('style', "display:none; position:relative; left:286px; top:-50px; width:420px; background-color: white; ");
+			$("#step4").hide();
+
+			$("#popup_wrap").addClass("chgClass");
+		}
+		
+		$("#popup_wrap").show();
+		$("#popup_wrap").find("li").each(function(index){
+			$(this).removeClass("on");
+		});
+		$("#step1").addClass("on");
+		$("#step1").addClass("tayo");
+		
+		var fName = checkName(fileName);
+		fileName = fName;
+		
+		var url = "/util/wonmunUtils/wonmunFileRequest.ajax";
+		
+		var param = new Object();
+			param.fileId      			= fileId;                         // 파일아이디
+			param.esbFileName 		= fileName;                       // 파일명
+			param.docId       			= result.openCateSearchVO.docNo;  // 문서아이디
+			param.ctDate      		= result.openCateSearchVO.prdnDt; // 생산일자
+			param.orgCd       			= result.openCateSearchVO.nstCd;  // 기관코드
+			param.prdnNstRgstNo 	= result.openCateSearchVO.prdnNstRgstNo;  // 문서ID
+			param.oppSeCd     		= result.openCateSearchVO.oppSeCd;  // 공개구분
+			param.isPdf       			= isPdf;                          				// PDF여부
+			param.chrgDeptNm 		= result.openCateSearchVO.chrgDeptNm;	//담당부서
+
+			selFileId = fileId;
+			orgFileName = fileName;
+		
+			var callBackFn = "wonmunStep3";
+
+			wonmun_Ajax(url, param, callBackFn);
+	};
+	
+
+	/**
+	* 뷰어 바로보기
+	* //VIEWER ADD 2020-09-07
+	*/ 
+	synapViewer = function(fileId, fileName, isPdf){
+		gViewerType = "S";
+		
+		wonmunStep1(fileId, fileName, isPdf);
+	};
+	
+	/**
+	* 뷰어 바로보기
+	* //VIEWER ADD(본문) 2021-03-15
+	*/ 
+	synapBMViewer = function(fileId, fileName, isPdf){
+		// 본문:1
+		docType = "1";
+		synapViewer(fileId, fileName, isPdf);
+	};
+	
+	
+	
+	/**
+	 * 원문 파일 수신 
+	 */
+	wonmunStep2 = function(result){
+		$("#popup_wrap").show();
+		$("#popup_wrap").find("li").each(function(index){
+			$(this).removeClass("on");
+		});
+		$("#step2").addClass("on");
+		$("#step2").addClass("tayo");
+		if(result.error_code == "00" || result.error_code == "0"){
+			var url = "/util/wonmunUtils/wonmunFileResponse.ajax";
+			
+			var param = new Object();
+				param.esbFilePath 	= result.esbFilePath; // 파일경로
+				param.fileName 		= result.fileName; // 파일명
+				param.esbFileName	= result.esbFileName; // 파일명
+				param.isPdf       		= result.isPdf;       // PDF여부
+				param.step        		= "step2";
+			
+			var callBackFn = "wonmunStep3";
+				
+			wonmun_Ajax(url, param, callBackFn);
+			
+		}else{
+			
+			$("#popup_wrap").hide();
+	//		alert(result.error_msg);
+		}
+	};
+	
+	/**
+	 * 기존에 원문 파일 다운로드가 서버에 존재하는지 분기
+	 */
+	wonmunStep3 = function(result){
+		
+		$("#popup_wrap").find("li").each(function(index){
+			$(this).removeClass("on");
+		});
+		$("#step2").addClass("on");
+		$("#step2").addClass("tayo");
+
+		if(result.error_code == "00" || result.error_code == "0"){
+			wonmunStep4(result);
+			
+		}else if(result.error_code == "01"){
+			
+			wonmunStep7(result);
+			
+		}else{
+			
+			alert(result.error_msg);
+			$("#popup_wrap").hide();
+			
+			$("#billingBtn").show();
+		}
+		
+	};
+	
+	/**
+	 * 원문 파일 개인정보 처리
+	 */
+	wonmunStep4 = function(result){
+		$("#popup_wrap").show();
+		$("#popup_wrap").find("li").each(function(index){
+			$(this).removeClass("on");
+		});		
+		$("#step3").addClass("on");
+		$("#step3").addClass("tayo");
+		var url = "/util/wonmunUtils/wonmunFileFilter.ajax";
+		
+		var param = new Object();
+			param.prdnNstRgstNo 		= originDtlVO.prdnNstRgstNo;
+			param.prdnDt 					= originDtlVO.prdnDt;	
+			param.esbFilePath 			= result.esbFilePath; // 파일경로
+			param.esbFileName 			= result.esbFileName; // 파일명
+			param.fileName 				= result.fileName; // 파일명
+			param.fileId 					= selFileId;
+			param.orglPrdnNstCd 		= result.orglPrdnNstCd; 
+			param.nstCd 					= originDtlVO.nstCd;
+			param.orgCd 					= originDtlVO.nstCd; 
+			param.orgSeCd 				= originDtlVO.nstSeCd; 
+			param.infoSj 					= originDtlVO.infoSj; 
+			param.chgrNmpn 	    		= originDtlVO.chgrNmpn; 
+			param.orgNm 					= originDtlVO.prcsNstNm; 
+			param.chrgDeptCd 			= originDtlVO.chrgDeptCd; 
+			param.chrgDeptNm 			= originDtlVO.chrgDeptNm;		
+			param.nstClNm 				= originDtlVO.nstClNm;		
+			param.prsrvPdCd 				= originDtlVO.prsrvPdCd;
+			param.docId       				= originDtlVO.docNo;  // 문서아이디
+			param.isPdf       				= result.isPdf;       // PDF여부
+			param.step        				= "step2";
+			param.closegvrnYn			= result.closegvrnYn;
+			selOrglPrdnNstCd				= result.orglPrdnNstCd;
+			param.ndnfFiltrRndabtYn	= originDtlVO.ndnfFiltrRndabtYn;
+			param.rceptInsttCd	        = originDtlVO.rceptInsttCd;  		//접수기관코드추가, 접수기관코드(이북5도)에 이메일 발송
+			param.rceptInsttCdNm      = originDtlVO.rceptInsttCdNm;  	//공무원창구 개인정보필터링에서 접수기관코드(이북5도) 조회
+			param.mngrTelno             =  result.mngrTelno;                 //개인정보필터링 검출시 전화번호
+
+		var callBackFn = "wonmunStep5";
+		
+		wonmun_Ajax(url, param, callBackFn);
+	};
+	
+	/**
+	 * 원문 파일 PDF 변환
+	 */
+	wonmunStep5 = function(result){
+		
+		if(result.error_code == "00" || result.error_code == "0"){
+			
+			// pdf변환일경우에만
+				
+			if(result.isPdf == "Y"){
+				
+				$("#popup_wrap").show();
+				$("#popup_wrap").find("li").each(function(index){
+					
+					$(this).removeClass("on");
+				});
+				
+				$("#step4").addClass("on");
+				$("#step4").addClass("tayo");
+					
+				if(result.totalDetectCount != "0" && originDtlVO.ndnfFiltrRndabtYn != "Y" && result.error_msg != ''){
+					alert(result.error_msg);
+				}
+				
+				var url = "/util/wonmunUtils/wonmunChangePdf.ajax";
+				
+				var param = new Object();
+					param.esbFilePath 		= result.esbFilePath; // 파일경로
+					param.esbFileName 		= result.esbFileName; // 파일명
+					param.fileName 			= result.fileName; // 파일명
+					param.isPdf       			= result.isPdf;       // PDF여부
+					param.docId       			= originDtlVO.docNo;  // 문서아이디
+					param.ctDate      		= originDtlVO.prdnDt; // 생산일자
+					param.orgCd       			= originDtlVO.nstCd;  // 기관코드
+					param.prdnNstRgstNo	= originDtlVO.prdnNstRgstNo;  // 기관코드
+					param.oppSeCd       		= originDtlVO.oppSeCd;  // 공개구분
+					param.fileId      			= selFileId;            // 파일아이디
+					param.orglPrdnNstCd  	= selOrglPrdnNstCd;  // 원기관코드
+					param.isPdf       			= result.isPdf;
+					param.nstCd       			= originDtlVO.nstCd;
+				
+				var callBackFn = "wonmunStep7";
+				
+				//VIEWER ADD 2020-09-07
+				if(gViewerType == "S") {
+					callBackFn = "wonmunStepSynap";
+				}
+				
+				wonmun_Ajax(url, param, callBackFn);
+				
+			}else{
+				
+				if(result.totalDetectCount != "0" && originDtlVO.ndnfFiltrRndabtYn != "Y" && result.error_msg != ''){
+					alert(result.error_msg);
+				}			
+				
+				//VIEWER ADD 2020-09-07
+				if(gViewerType == "S") {
+					wonmunStepSynap(result);
+				} else {
+					wonmunStep7(result);
+				}
+			}
+				
+		}else{
+			
+			alert(result.error_msg);
+			$("#popup_wrap").hide();
+			$("#billingBtn").show();
+			
+		}
+	};
+		
+	/**
+	 * 원문 파일 다운로드
+	 */
+	wonmunStep7 = function(result){
+
+		if(result.error_code == "00" || result.error_code == "0"){		
+			var url   = "/util/wonmunUtils/wonmunFileDownload.down";
+
+			var param = new Object();
+				param.esbFilePath		= result.esbFilePath; // 파일경로
+				param.esbFileName	= result.esbFileName; // 파일명
+				param.fileName		= result.fileName; // 파일명
+				param.isPdf					= result.isPdf;       // PDF여부
+				param.prdnNstRgstNo 	= originDtlVO.prdnNstRgstNo;
+				param.prdnDt 				= originDtlVO.prdnDt;
+				param.fileId					= selFileId;
+				param.gubun				= "esbFilePath";
+				
+			util_movePage(url, param, true);
+			
+			$("#popup_wrap").hide();
+			
+		}else{
+			
+			alert(result.error_msg);
+			$("#popup_wrap").hide();
+			$("#billingBtn").show();
+		}
+	};
+	
+	
+	/**
+	* 뷰어 바로보기 처리 실행
+	* //VIEWER ADD 2020-09-07
+	*/
+	wonmunStepSynap = function(result) {
+		gViewerType = "";
+		
+		if(result.error_code == "00"){
+			var url   = "/util/wonmunUtils/convertViewerFile.ajax";
+
+			//getExt(orgFileName, result.isPdf);
+			
+			var param = new Object();
+				param.esbFilePath = result.esbFilePath; 	// 파일경로
+				param.esbFileName = result.esbFileName;
+				param.fileName			= result.fileName; 			// 파일명
+				param.isPdf					= result.isPdf;       		// PDF여부
+				param.prdnNstRgstNo 	= originDtlVO.prdnNstRgstNo;
+				param.prdnDt 				= originDtlVO.prdnDt;
+				param.fileId					= selFileId;
+				param.gubun				= "esbFilePath";
+				
+				/* if (docType != null && docType == 1) {
+					param.esbFileName		= result.fileName; 	// 파일명
+				} else {
+					param.esbFileName		= result.fileName + "." + tmpExt; 	// 파일명
+				} 
+				param.fileName			= orgFileName; 			// 파일명
+				*/
+				
+			var callBackFn = "wonmunStepSynapView";
+			docType = "";
+			wonmun_Ajax(url, param, callBackFn);
+			
+			$("#popup_wrap").hide();
+		}else{
+			alert(result.error_msg);
+			$("#popup_wrap").hide();
+			$("#billingBtn").show();
+		}
+	};
+	
+	
+	/**
+	* 뷰어 바로보기 팝업 호출
+	* //VIEWER ADD 2020-09-07
+	*/
+	wonmunStepSynapView = function(result) {
+		if(result.error_code == "0" || result.error_code == "00") {		
+			var url   = "/skin/doc.html";
+			
+			if(window.location.host == "twww3.open.go.kr" || window.location.host.indexOf("twww3.open.go.kr") > -1) {
+				url   = "/skin_staging/doc.html";
+			} else if(window.location.host.indexOf("localhost") > -1) {
+				url   = "/skin_local/doc.html";
+			}
+			
+			
+			var param = new Object();
+			param.rs = result.vo.synapRs;
+			param.fn = result.vo.synapFn;
+	
+			$("#popup_wrap").hide();
+			
+			window.open(url + "?" + "rs=" + param.rs + "&fn=" + param.fn);
+		} else {
+			alert(result.error_msg);
+		}
+	};
+	
+	
+	/**
+	 * 원문 Ajax
+	 */
+	wonmun_Ajax = function(strUrl, param, callBackFn){
+
+		$.ajax({
+			 type        : "POST"                                             // "POST", "GET"
+			,async       : param.async == false?false:true                    // true, false
+		    ,url         : strUrl                                             // Request URL
+		    ,dataType    : "json"                                             // 전송받을 데이터의 타입
+			,timeout     : "1000000"                                          // 제한시간 지정
+			,cache       : false                                              // true, false
+			,data        : param                                              // 서버에 보낼 파라메터
+			,contentType : "application/x-www-form-urlencoded; charset=UTF-8"
+			,error       : function(request, status, error){                  // 통신 에러 발생시 처리
+				alert("서버 통신중 오류가 발생하였습니다.");
+				$("#popup_wrap").hide();
+			}
+		    ,success     : function(result, status, request){                 // 통신성공시처리
+		    	
+		    	if ('429' == result.code){
+		    		util_verifyUser();
+		    		return false;
+		    	}
+		    	
+				if ('1' == result.rtnCode){
+					$("#popup_wrap").attr('style', "display:none; position:relative; left:286px; top:-50px; width:420px; background-color: white; ");
+					$("#step4").hide();
+
+					$("#popup_wrap").addClass("chgClass");
+					
+					alert(result.rtnMessage);
+					return false;
+				}
+
+	    		if(typeof callBackFn === "function"){
+		    		callBackFn(result);
+				}else if(typeof callBackFn === "string"){
+					eval(callBackFn + "(result)");
+				}
+		    		
+		    }
+		    ,beforeSend  : function(){                                             // 통신을 시작할때 처리
+	
+		    }
+		    ,complete    : function() {                                            // 통신이 완료된 후 처리
+	//	    	$("#popup_wrap").hide();
+	//	    	$("#popup_wrap").find("li").each(function(index){
+	//	    		$(this).removeClass("on");
+	//	    	});
+		    }
+		});
+		
+	};
+	
+	/**
+	 * link 연결
+	 */
+	openLinkUrl = function(url){
+		
+		window.open(url);
+		
+	};
+	
+	util_dataInputTd = function(obj, key){
+		
+    	var keyVal;
+    	var i, v;
+    	var tmp="";
+    	for (i in obj) {
+    		v = obj[i];                
+    		t = typeof(v);
+    		if (obj.hasOwnProperty(i)) {
+    			
+    			if(key == i){
+    				keyVal = v;
+    			}
+    			if(i == "infoSj") {
+
+    				$("#infoSj").html("<p><strong >"+v+"</strong></p>");
+    			} else if(i == "dlsrCdNm") {
+
+    				$("#" + i).html("<p class=\"blue_text\"><strong>"+v+"</strong></p>");
+    			} else {
+    				$("#" + i).html("<p>"+v+"</p>");	
+    			}
+    		}
+    	}
+
+    	// key 값처리
+    	if(typeof key !== "undefined"){
+    		$("body").append("<input type=\"text\" name=\"" + key + "\" id=\"" + key + "\" value=\"" + keyVal + "\" title=\"타이틀\"/>");
+    	}
+    };
+
+    /* 검색 */
+    searchFn = function(){
+   	
+    	  	
+	       var url            = "/othicInfo/infoList/infoList.ajax";
+		   var param       = new Object();
+	       
+		   if(result.title == "원문정보"){
+			   
+			   url            = "/othicInfo/infoList/orginlInfoList.ajax";
+
+		   }else if(result.title == "기관장결재문서"){
+			   
+			   url            = "/othicInfo/infoList/mnstrSanDocList.ajax";
+		   }
+			
+		   param.kwd  				= result.parameterVO.kwd;
+ 		   param.insttSeCd 		= result.parameterVO.insttSeCd;
+ 		   param.eduYn 			= result.parameterVO.eduYn;	
+ 		   param.startDate  		= result.parameterVO.startDate.replace(/-/g, '');
+ 		   param.endDate  		= result.parameterVO.endDate.replace(/-/g, '');
+ 		   param.insttCd 			= result.parameterVO.insttCd;
+ 		   param.insttCdNm 		= result.parameterVO.insttCdNm;
+ 		   param.topictype 		= result.parameterVO.topictype;
+ 		   param.searchMainYn	= result.parameterVO.searchMainYn;	
+ 		   param.sort  				= result.parameterVO.sort;
+ 		   
+ 		   param.viewPage 		= 1;
+ 		   param.rowPage  		= 6;		//6개조회로 변경, 콜백에서 5개처리
+										  	
+		   var callBackFn      	= "searchFn_callBack";
+		   util_ajax(url, param, callBackFn);
+  	 }
+	 
+    /**
+  	 * 검색이벤트 콜백
+  	 */
+  	 function searchFn_callBack(result){
+        
+	   	var str ="";
+	   	var total = result.rtnTotal;
+	  		$(".info_list > ul").empty();
+	  		
+	  		if(result.rtnTotal > 0){
+				var addCnt = 0;
+	  			$.each(result.rtnList, function(index, data){
+	  				
+	  				if(originDtlVO.prdnDt != data.PRDCTN_DT || originDtlVO.prdnNstRgstNo != data.PRDCTN_INSTT_REGIST_NO){	  				
+		  				if(addCnt < 5){
+			  				str += "<li>";
+			  				str += "<p class=\"left\"><a href=\"javascript:goDetail('"+data.PRDCTN_INSTT_REGIST_NO+"','"+data.PRDCTN_DT+"','"+data.INSTT_SE_CD+"');\">" + data.INFO_SJ +"</a>";
+			  				str += "<span>" + data.PROC_INSTT_NM+" > " +data.CHRG_DEPT_NM + "</span>";
+			  				str += "</p>";
+			  				str += "<p class=\"right\">"+data.CHRG_DEPT_NM+"<span>"+convertFormat(data.PRDCTN_DT,"####.##.##", ".")+"</span></p>";
+			  				str += "</li>";
+		  					
+			  				addCnt = addCnt + 1;
+		  				}
+	  				}
+	  			});
+	  			
+	  			if(str == ""){
+	  				str += "<li>";
+	  				str += "<p  class=\"center\" >검색된 내용이 없습니다.</p>";
+	  				str += "</li>";
+	  			}
+	  			
+	  		}else{
+	  				str += "<li>";
+	  				str += "<p  class=\"center\" >검색된 내용이 없습니다.</p>";
+	  				str += "</li>";
+	  		}
+	  		
+	  		$(".info_list > ul").append(str);
+	  	};	
+	  	
+	  	createParam = function(no,dt,cd){
+			var param = new Object();
+
+			param.prdnNstRgstNo 	= no;
+			param.prdnDt 			= dt;
+			param.nstSeCd 			= cd;
+			param.title 			= result.title;
+	 		   
+			param.kwd  				= result.parameterVO.kwd;
+			param.insttSeCd 		= result.parameterVO.insttSeCd;
+			param.eduYn 			= result.parameterVO.eduYn;	
+			param.startDate  		= result.parameterVO.startDate.replace(/-/g, '');
+			param.endDate  			= result.parameterVO.endDate.replace(/-/g, '');
+			param.insttCd 			= result.parameterVO.insttCd;
+			param.insttCdNm 		= result.parameterVO.insttCdNm;
+			param.topictype 		= result.parameterVO.topictype;
+			param.searchMainYn		= result.parameterVO.searchMainYn;
+			
+			return param;
+	  	}
+	    
+		/* 상세화면 이동 */ 
+ 		goDetail = function(no,dt,cd) { 
+
+ 			let strUrl = "/othicInfo/infoList/infoListDetl.do",
+ 				param = createParam(no,dt,cd);
+			
+			util_movePage(strUrl, param);
+		};
+		
+		/* 상세화면 이동 */ 
+ 		goPrevNextDetail = function(no,dt,cd, offSet) { 
+
+ 			let strUrl = window.location.pathname,
+				param = createParam(no,dt,cd);
+
+			param.site				= result.parameterVO.siteNm;	
+			param.searchCurrTab 	= result.parameterVO.searchCurrTab;
+			param.viewPage 			= result.parameterVO.viewPage;
+			param.rowPage 			= result.parameterVO.rowPage;
+			param.sort 				= result.parameterVO.sort;
+			param.prevUrl 			= result.parameterVO.prevUrl;
+			param.title 			= result.pnTitle;
+			param.offSet 			= offSet;
+
+			param.othbcSeCd			= result.parameterVO.othbcSeCd;	
+			param.category			= result.parameterVO.category;	
+			
+			util_movePage(strUrl, param);
+		};
+	  	
+  		util_dateToStr = function(arg1){
+	   		
+	   		var rtn = "";
+	   		
+	   		if(arg1.length >= 8){
+	   			
+	   			rtn = arg1.substring(0, 10).replace(/-/gi,".");
+	   			
+	   		}else{
+	   			
+	   			rtn = arg1;
+	   			
+	   		}
+	   		
+	   		return rtn;
+    	};
+	  	
+		//]]>
+		
+		function isJsonString(str) {
+			try {
+				var json = JSON.parse(str);
+				
+				return (json === 'object');
+			} catch(e) {
+				return false;
+			}
+		}
+		
+		// 연관정보 버튼
+		goRetInfoFn = function(){
+			$("#retInfo").show();
+			$("#retInfoBtn").hide();
+			
+			$("#startDt").val(initCalDate(-7));
+			$("#endDt").val(initCalDate(0));
+			//beforeStartDt = $("#startDt").val();
+			//beforeEndDt = $("#endDt").val();
+			// 연관정보
+			if(result.openCateSearchVO != undefined){
+				$(".info_list").hide();
+				$(".info_list#insttDiv_T").show();
+			}
+		}
+		
+		searchRetInfoFn = function() {
+			if(!checkWonmunRetValidation()) {
+        		return;
+    		}
+
+			if(beforeStartDt == $("#startDt").val() && beforeEndDt == $("#endDt").val()) {
+				return false;	//동일조건의 반복 검색은 무시
+			} else {
+				beforeStartDt = $("#startDt").val();
+				beforeEndDt = $("#endDt").val();
+			}
+			
+			$(".info_list#insttDiv_" + "T" + "> ul").empty();
+			$(".info_list#insttDiv_" + "C" + "> ul").empty();
+			$(".info_list#insttDiv_" + "F" + "> ul").empty();
+			
+
+			wonmunRetInfo('T');
+			//wonmunRetInfo('C');
+			//wonmunRetInfo('F');
+		};
+		
+		checkWonmunRetValidation = function() {
+			var stdt = util_replaceAll($("#startDt").val(), "-", "");
+			var eddt = util_replaceAll($("#endDt").val(), "-", "");
+			
+			if(util_reckDate(stdt, eddt) < 0) {
+				alert("검색일자 조건을 확인해주세요.");
+				
+				return false;
+			}
+			
+			if(util_reckDate(stdt, eddt) > 30) {
+				alert("원활한 검색서비스를 위해 검색기간은 1개월로 제한합니다.");
+				
+				return false;
+			}
+			
+			return true;
+		};
+		
+    	// 연관정보
+        wonmunRetInfo = function(insttSeCd){
+   		    var url        = "/infOthbc/numberInfoOthbc/wonmunRetInfo.ajax";
+   	   		var param       = new Object();
+   	   		
+   	   		param.kwd = makeMorphologicalKwd(result.openCateSearchVO.infoSj, 3);
+   	   		if(!param.kwd) {	//한글자 이상의 단어로 구성한 kwd가 없을경우.
+   	   	   		param.kwd = result.openCateSearchVO.infoSj;
+   	   		}
+
+   	   		param.startDate = util_replaceAll($("#startDt").val(), "-", "");
+	   		param.endDate = util_replaceAll($("#endDt").val(), "-", "");
+   	   		if($('#nstSeCd').val()) {
+   	   			param.insttSeCd = $('#nstSeCd').val();
+   	   		}
+   	   		param.viewPage = 1;
+   	 		param.rowPage = 10;
+
+ 				 
+   		    var callBackFn      = "wonmunRetInfo_callBack";
+   		    util_ajax(url, param, callBackFn, '', 'N');
+       	 };
+       	 
+       	wonmunRetInfo_callBack = function(result){
+
+			if(result.error_code != "00"){
+				alert(result.error_msg);
+				beforeStartDt='';
+				beforeEndDt='';
+				return false;
+			}
+			
+       		$(".info_list#insttDiv_T").show();
+       		
+			var str = "";
+			var rtnList = result.infoList;
+			var insttSeCd = util_nvl(result.insttSeCd) != "" ? result.insttSeCd : "T";
+			
+			$(".info_list#insttDiv_" + insttSeCd + "> ul").empty();
+
+			if(rtnList != undefined && rtnList != null && rtnList.length > 0){
+	   			
+	   			$.each(rtnList, function(index, data){
+	   				//값이 없으면 &nbsp; 입력procInsttNm
+	   				var chkData = util_nvl(data.chrgDeptNm, "&nbsp;");
+	   				
+	   				str += "<li>";
+	   				str += "<p class=\"left\"><a href=\"javascript:goDetailInqire('"+data.prdnNstRgstNo+"','"+data.prdnDt+"','"+data.nstSeCd+"');\">" + data.infoSj +"</a>";
+	   				str += "<span>" + data.nstCdNm + " > " + chkData + "</span>";
+	   				str += "</p>";
+	   				str += "<p class=\"right\">"+data.unitJobNm+"<span>"+convertFormat(data.prdnDt,"####.##.##", ".")+"</span></p>";
+	   				str += "</li>";
+	   			});
+	   		}else{
+	   				str += "<li>";
+	   				str += "<p  class=\"center\" style=\"text-align:center;\">검색된 내용이 없습니다.</p>";
+	   				str += "</li>";
+	   		}
+	   		
+			$(".info_list#insttDiv_" + insttSeCd + "> ul").append(str);
+	   		
+	   		/* if(insttSeCd == "C"){
+	   			wonmunRetInfo('W');
+	   		} else if(insttSeCd == "W"){
+	   			wonmunRetInfo('E');
+	   		} else if(insttSeCd == "E"){
+	   			wonmunRetInfo('P');
+	   		} */
+       	}
+      	
+       	//1. kwd 한글이외의 문자는 스페이스로 치환
+       	//2. 단어 길이가 1개인것 제외
+       	//3. 단어 길이 아래차순으로 정렬 & 공백으로 합친 후 return
+      	function makeMorphologicalKwd(kwd, kwdCnt) {
+      		let result = '';
+      		let kwdList = kwd.replace(/[^가-힣]/g,' ').trim().split(' ');
+     		if(kwdList.length == 1) {	//하나의 단어일 경우
+      			if(kwdList[0].length > 1) {	//한글자이상만 true
+      				result = kwdList[0];
+      			}
+      		} else {	//여러개의 단어일경우
+      			kwdList = kwdList.sort(function(a,b) {	//단어 길이 내림차순 정렬
+      				if(a.length > b.length) {
+      					return -1;
+      				} else if(a.length < b.length) {
+      					return 1;
+      				} else {
+      					return 0;
+      				}
+      			});
+      			
+      			let cnt = kwdCnt > kwdList.length ? kwdList.length : kwdCnt;
+      			for(let i=0; i < cnt; ++i) {
+      				if(kwdList[i].length < 2) {	//한글자 제외
+      					break;
+      				}
+      				result += kwdList[i] +' ';
+      			}
+      		}
+      		return result;
+      	}
+      
+      
+       	/* 원문상세 조회 건수 추가 */ 
+ 		goDetailInqire = function(no,dt,cd) { 
+			var url            = "/infOthbc/numberInfoOthbc/orgnalInfoRecomendInqire.ajax";
+			var param       = new Object();
+				param.prdctnInsttRegistNo = no;
+				param.prdctnDt = dt;
+				param.insttSeCd = cd;
+				param.functionType = "0002";
+													  	
+			var callBackFn      = "goDetailInqire_callBack";
+			util_ajax(url, param, callBackFn);
+		};
+		
+		goDetailInqire_callBack = function(result){
+			goDetail(result.ioBigdataVO.prdctnInsttRegistNo,result.ioBigdataVO.prdctnDt,result.ioBigdataVO.insttSeCd);
+		};
+		
+		/*
+		showDownloadStatus = function() {
+			$('<div id="modal_downloading_back" '
+					+ 'style="z-index:' + "999" + ';'
+					+ 'position:absolute;' + 'left:0;'
+					+ 'top:0;' + 'min-width:'
+					+ document.documentElement.clientWidth
+					+ 'px;' + 'width:100%;' + 'min-height:'
+					+ $(document).height() + 'px;'
+					+ 'height:100%;'
+					+ 'background-color:#000;' + 'opacity:'
+					+ "0.1" + ';'
+					+ 'filter:alpha(opacity='
+					+ 0.1 * 100 + ');'
+					+ '"></div>').appendTo($('body'));
+			
+			
+			$("#popup_wrap").show();
+		};
+		
+		hideDownloadStatus = function () {
+			$("#modal_downloading_back").remove();
+			$("#popup_wrap").hide();
+		};
+		*/
+		
+		// 확장자추출
+		var tmpExt;
+		function getExt(fileName, isPdf) {
+			if (isPdf == "Y") {
+				tmpExt = "pdf"
+			} else {
+				var idx = fileName.lastIndexOf(".");
+
+				if(idx >= 0) {
+					tmpExt = fileName.substring(idx+1);
+				} else {
+					tmpExt = "";
+				}
+			}
+		}		
+		
+		// 예외기관 확인
+		function exceptionInsttCdCheck(insttCd) {
+			var checkResult = false;
+			var exceptionInsttCdList = ["1040000" ,"1051000" ,"1092000" ,"1103000" ,"1130000" ,"1140100" ,"1160100" ,"1170000" ,"1830000" ,"1371000" ,"1383000" ,"1421000" ,"1543000" ,"1550000" ,"1833100" ,"1570100" ,"1670000" ,"1721000" ,"1741000" ,"1790387" ,"3250000" ,"3260000" ,"3270000" ,"3340000" ,"3390000" ,"3400000" ,"3440000" ,"3450000" ,"3500000" ,"3540000" ,"3550000" ,"3570000" ,"3590000" ,"3620000" ,"3730000" ,"3980000" ,"3990000" ,"4000000" ,"4010000" ,"4020000" ,"4030000" ,"4050000" ,"4070000" ,"4080000" ,"4090000" ,"4160000" ,"4200000" ,"4230000" ,"4280000" ,"4290000" ,"4330000" ,"4340000" ,"4390000" ,"4430000" ,"4460000" ,"4500000" ,"4510000" ,"4530000" ,"4570000" ,"4590000" ,"4610000" ,"4620000" ,"4640000" ,"4740000" ,"4750000" ,"4780000" ,"4790000" ,"4810000" ,"4820000" ,"4850000" ,"4900000" ,"4920000" ,"4990000" ,"5000000" ,"5020000" ,"5070000" ,"5100000" ,"5130000" ,"5170000" ,"5200000" ,"5240000" ,"5260000" ,"5310000" ,"5380000" ,"5390000" ,"5410000" ,"5430000" ,"5460000" ,"5470000" ,"5570000" ,"5690000" ,"5700000" ,"6420000" ,"6440000" ,"6450000" ,"6500000"];
+			
+			if (exceptionInsttCdList.indexOf(insttCd) == -1) {
+				checkResult = true;
+			}
+			return checkResult;
+		}
+
+		</script>			
+
+		<!-- CONTENT END -->
+	</div>
+	
+	<!-- FOOTER START -->
+	
+	<div class="footer">
+		<div class="foot_link">
+			<ul>
+				<li class="gr"><a href="/useInfo/useIndvdlinfo.do">개인정보처리방침</a></li>
+				<li><a href="/useInfo/useCpyrht.do">저작권보호정책</a></li>
+				<li><a href="/useInfo/userDwln.do">뷰어다운로드</a></li>
+				<li><a href="/useInfo/userMap.do">찾아오시는길</a></li>
+				<li style="display: none;"></li>
+				<li>
+					<label class="access" for="sel01">관련기관정보</label>
+					<select id="sel01" title="관련기관정보" tabindex="0">
+						<option>관련 기관정보</option>
+						<option data-link="http://www.alio.go.kr" title="ALIO 공공기관 경영정보공개시스템">ALIO 공공기관 경영정보공개시스템</option>
+						<option data-link="http://www.data.go.kr"  title="DATA공공데이터포털">DATA공공데이터포털</option>
+						<option data-link="https://kreach.me.go.kr" title="화학물질정보처리시스템">화학물질정보처리시스템</option>
+						<option data-link="https://seereal.lh.or.kr"  title="SEE:REAL-한국토지주택공사">SEE:REAL-한국토지주택공사</option>
+						<option data-link="http://www.hira.or.kr" title="건강보험심사평가원">건강보험심사평가원</option>
+						<option data-link="http://data.gg.go.kr" title="경기데이터드림">경기데이터드림</option>
+						<option data-link="https://www.laiis.go.kr" title="내고장알리미">내고장알리미</option>
+						<option data-link="http://www.academyinfo.go.kr" title="대학알리미">대학알리미</option>
+						<option data-link="http://water.nier.go.kr" title="물환경정보시스템">물환경정보시스템</option>
+						<option data-link="http://openapt.seoul.go.kr" title="서울특별시 공동주택통합정보마당">서울특별시 공동주택통합정보마당</option>
+						<option data-link="http://www.sexoffender.go.kr" title="성범죄자알림e">성범죄자알림e</option>
+						<option data-link="http://www.smartconsumer.go.kr" title="한국소비자원 스마트컨슈머">한국소비자원 스마트컨슈머</option>
+						<option data-link="http://www.prism.go.kr" title="정책연구관리시스템 PRISM">정책연구관리시스템 PRISM</option>
+						<option data-link="http://www.childschool.go.kr" title="유아학비지원시스템 e-유치원">유아학비지원시스템 e-유치원</option>
+						<option data-link="http://www.childcare.go.kr" title="임신육아종합포털 아이사랑">임신육아종합포털 아이사랑</option>
+						<option data-link="http://cleanup.seoul.go.kr" title="서울특별시 정비사업 정보몽땅">서울특별시 정비사업 정보몽땅</option>
+						<option data-link="http://www.gov.kr/portal/main" title="정부24">정부24</option>
+						<option data-link="https://www.lofin365.go.kr" title="지방재정365 지방재정통합공개시스템">지방재정365 지방재정통합공개시스템</option>
+						<option data-link="http://www.cleaneye.go.kr" title="클린아이 지방공공기관통합공시">클린아이 지방공공기관통합공시</option>
+						<option data-link="http://contents.archives.go.kr" title="행정안전부 국가기록원">행정안전부 국가기록원</option>
+					</select>
+					<span class="abs_btn" style="padding-left:3px;">
+						<a href="#" class="btn_susu" onclick="goLinkSiteFn();" title="새창열림">이동</a>
+					</span>
+				</li>
+			</ul>
+		</div>
+		<div class="foot_text">
+			<div class="in_text">
+				<span class="call">1588-2572</span>
+				<p>
+					대한민국정보공개 30112 세종특별자치시 도움6로 42(어진동)<br/>
+					이용문의 : 1588-2572 (월~금 09:00~18:00, 공휴일 제외) <br/>대표메일 : openinfo@korea.kr
+					<strong style="font-size:13px;">ⓒ Ministry of the Interior and Safety. Some Rights Reserved.</strong>
+				</p>
+				<div id="mark_img" class="mark_img">
+                <a title="새창" href="http://www.wa.or.kr/board/list.asp?BoardID=0006" target="_blank">
+                    <img class="wa" alt="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)" src="/images/common/wa_certification_mark.bmp">
+                </a>
+            </div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javaScript" language="javascript" >
+		const scui = '';
+	//<![CDATA[	
+		/* 상세검색이동 */ 
+		goLinkSiteFn = function() {
+			
+			var url = $("#sel01 option:selected").attr('data-link');
+
+			if(url != null && url != "" && url.indexOf("http") > -1){
+				window.open(url);	
+			} else {
+				alert("관련기관을 선택해주세요.");
+				$("#sel01").focus();
+			}
+			
+		};
+	
+	//]]>
+	</script>	
+	
+	<!-- FOOTER END -->
+</div>
+
+</body>
+</html>

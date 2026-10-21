@@ -1,0 +1,8 @@
+[Unit]
+Description=bogoseo bulk document collection (15 sources)
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/work/bogoseo
+ExecStart=%h/work/bogoseo/bin/bogoseo collect
+TimeoutStartSec=6h
