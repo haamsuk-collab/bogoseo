@@ -147,7 +147,8 @@ All commands run from the repo directory as `bin/bogoseo ...` (a wrapper around 
 6. **Approve the outline.** `report outline reports/<name>` shows reference vs draft headings side by side; you approve section order and flow.
 7. **Interview.** The agent asks about what the evidence does not cover, using the Ouroboros interview (`ouroboros_interview`) when available, otherwise omp's `ask` tool. There is no question cap; you can say "draft now" at any time. Each answer is logged with `report log` into `interview_log.yaml`. Changes to inherited sentences are shown before/after and need your approval.
 8. **Draft.** The agent writes `reports/<name>/draft.md` in the reference's marker system (□ → ㅇ → •/-, ☞ conclusion, * note, ※ caption). Unknowns are marked inline `[확인 필요 N: ...]` and listed in a final `□ 확인 필요 목록`; attachments start with `[참고 N] 제목`.
-9. **Guards.** Before the agent replaces an existing draft it runs `report regen-guard reports/<name> [--proposed NEW.md]`; exit 3 means you edited the file, and your text is kept unless you approve. Then the gate:
+9. **Final polish (최종 윤문).** Once the content is settled, the agent follows `guides/polish-ko.md` to fix wording only. It first copies the draft to `reports/<name>/revision/draft_before_polish_<YYYYMMDD-HHMM>.md`, then shows a before → after list (line, before, after, rule id). Only lines you approve are changed, and if more than 30% of body lines would change it stops to ask. Facts, numbers, markers, `[참고 N]`, `[확인 필요 N: ...]`, line order and ending style are never touched.
+10. **Guards.** Before the agent replaces an existing draft it runs `report regen-guard reports/<name> [--proposed NEW.md]`; exit 3 means you edited the file, and your text is kept unless you approve. Then the gate:
 
 ```
 bin/bogoseo check reports/<name>/draft.md      # prints FAIL lines per rule (i) facts (ii) 확인 필요 marks (iii) numbers (iv) endings, then PASS/FAIL

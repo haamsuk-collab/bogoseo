@@ -28,7 +28,8 @@ Work from the repository this skill resolves to (the target of the `~/.agents/sk
    - Attachments start with a line `[참고 N] 제목`.
    - Facts flagged used_in_body must appear verbatim; unfamiliar numbers go in a marked sentence.
 8. **Regeneration guard.** Before replacing an existing draft: `bin/bogoseo report regen-guard reports/<name> [--proposed NEW.md]`. Exit 3 means the user edited it: show the diff and keep their text unless they approve.
-9. **Check gate.** `bin/bogoseo check reports/<name>/draft.md`. Exit 0 required before showing the draft; on failure fix and rerun. After a pass: `bin/bogoseo report regen-guard reports/<name> --mark-checked`.
+9. **Korean final polish (최종 윤문).** Once draft content is settled, read `guides/polish-ko.md` and polish wording only. Save a copy to `reports/<name>/revision/draft_before_polish_<YYYYMMDD-HHMM>.md` first. Show the user a before → after list (line, before, after, rule id). Apply only approved lines; user-edited lines need explicit approval (step 8). If more than 30% of body lines would change, stop and confirm with the user. Never change facts, numbers, markers, `[참고 N]`, `[확인 필요 N: …]`, line order, or the chosen ending style. Then run step 10.
+10. **Check gate.** `bin/bogoseo check reports/<name>/draft.md`. Exit 0 required before showing the draft; on failure fix and rerun. After a pass: `bin/bogoseo report regen-guard reports/<name> --mark-checked`.
 
 ## Extraction and OCR
 `bogoseo.extract.extract(path)` runs kordoc, falling back to OCR. Lines in `low_conf` need the vision step: `render_pages(pdf, out_dir)` to PNGs, read the images with the image-capable `read` tool, then `apply_vision(result, [{page, text, corrected}])`. Anything still unreadable: ask the user to paste the text.
