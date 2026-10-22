@@ -200,10 +200,13 @@ def test_rule_iv_gaejo(tmp_path):
     def draft(line):
         return f"보안 점검 보고\n\n□ 현황\nㅇ {line}\n"
     for ok_line in ["점검 주기 조정 필요", "시행 예정", "보고 요망", "점검 완료", "추진 계획 수립(안)",
-                    "점검 주기 조정 필요 [참고 1]"]:
+                    "점검 주기 조정 필요 [참고 1]",
+                    # Sino-Korean root after a noun: Kiwi misreads 상이 as 상/XSN + 이/JKS
+                    "출제관이 각자 출제한 문항을 취합하므로 문제 수준·난이도 상이",
+                    "부서별 기준 상이"]:
         assert run(tmp_path, draft(ok_line))["ok"], ok_line
     for bad in ["점검 주기를 조정함", "점검 주기를 조정한다.", "점검 주기 조정 필요.", "조정이 필요하다",
-                "조정 필요합니다"]:
+                "조정 필요합니다", "문제 수준이", "난이도가 상이하며", "대응 방향을 잡다"]:
         assert run(tmp_path, draft(bad))["failures"]["iv"], bad
 
 

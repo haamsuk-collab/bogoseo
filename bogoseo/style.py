@@ -60,7 +60,29 @@ def _clean(line_body: str) -> str:
 
 def _ends_with_noun(s: str) -> bool:
     toks = _content_tokens(s)
-    return bool(toks) and toks[-1].tag in GAEJO_OK_TAGS
+    if not toks:
+        return False
+    if toks[-1].tag in GAEJO_OK_TAGS:
+        return True
+    if toks[-1].tag.startswith("E"):  # verb/adjective ending (잡다 also has an XR reading)
+        return False
+    return _last_word_is_root(s)
+
+
+def _last_word_is_root(s: str) -> bool:
+    """Kiwi splits a bare Sino-Korean root after a noun ("난이도 상이" -> 상/XSN + 이/JKS).
+    Accept the line when the last word alone has a whole-word root (XR) reading.
+    Only XR: NNG/NNP guesses would also accept noun+particle words such as "수준이"."""
+    words = s.split()
+    if not words:
+        return False
+    word = words[-1].rstrip(".,;:!?)]】」』'\"")
+    if not word:
+        return False
+    return any(
+        len(toks) == 1 and toks[0].form == word and toks[0].tag == "XR"
+        for toks, _ in kiwi().analyze(word, top_n=5)
+    )
 
 
 def _split_period(s: str) -> tuple[str, bool]:
